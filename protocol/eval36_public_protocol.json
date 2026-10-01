@@ -1,0 +1,116 @@
+{
+  "analysis": {
+    "bootstrap_replicates": 50000,
+    "direction": "candidate_minus_comparator_lower_is_better",
+    "registered_gates": {
+      "eval1_guard_gate": {
+        "criteria": {
+          "bootstrap_micro_upper_below_zero": true,
+          "pooled_delta_below_zero": true,
+          "wins_at_least_half_non_ties": true,
+          "worst_meeting_harm_at_most_0p05": true
+        },
+        "pass": true,
+        "threshold_or_method_retuning_authorized": false
+      },
+      "eval1_guarded_learned_vs_guarded_public_gate": {
+        "criteria": {
+          "guarded_learned_bootstrap_upper_below_zero": false,
+          "guarded_learned_pooled_better_than_guarded_public": true
+        },
+        "pass": false
+      },
+      "eval2_guard_gate": {
+        "criteria": {
+          "bootstrap_micro_upper_below_zero": true,
+          "pooled_delta_below_zero": true,
+          "wins_at_least_half_non_ties": true,
+          "worst_meeting_harm_at_most_0p05": true
+        },
+        "pass": true,
+        "threshold_or_method_retuning_authorized": false
+      },
+      "joint_replication_gate": {
+        "pass": true,
+        "public_comparator_is_supporting_not_a_method_efficacy_gate": true,
+        "requires_eval1_and_eval2": true,
+        "threshold_or_method_retuning_authorized": false
+      }
+    },
+    "split_and_contrast_specific_seeds": {
+      "eval1_primary": {
+        "guarded_learned_vs_guarded_public": 20260723,
+        "public_guard_effect": 20260722,
+        "raw_learned_vs_raw_public": 20260724,
+        "v035_guard_effect": 20260721
+      },
+      "eval2_exact_replication": {
+        "guarded_learned_vs_guarded_public": 20261723,
+        "public_guard_effect": 20261722,
+        "raw_learned_vs_raw_public": 20261724,
+        "v035_guard_effect": 20261721
+      },
+      "pooled_supportive": {
+        "guarded_learned_vs_guarded_public": 20262723,
+        "public_guard_effect": 20262722,
+        "raw_learned_vs_raw_public": 20262724,
+        "v035_guard_effect": 20262721
+      }
+    },
+    "threshold_or_method_retuning_authorized": false,
+    "unit": "full_meeting"
+  },
+  "claim_boundary": {
+    "acoustic_improvement_established": false,
+    "completed_two_reviewer_listening_audit": true,
+    "corpus_wide_safety_rate_established": false,
+    "learned_frontend_superiority_established": false,
+    "paced_end_to_end_latency_established": false,
+    "practical_transcript_utility_established": false,
+    "real_person_identity_established": false,
+    "replicated_guard_effect": true
+  },
+  "evaluation": {
+    "anonymous_within_meeting_slots_only": true,
+    "corpus": "AISHELL-5",
+    "eval1_meetings": 18,
+    "eval1_role": "primary",
+    "eval2_meetings": 18,
+    "eval2_role": "exact_replication",
+    "meetings": 36,
+    "pooled_role": "supportive_only"
+  },
+  "method": {
+    "guard_is_text_postprocessing_not_physical_separation": true,
+    "keep_repetitions": 2,
+    "max_period_chars": 12,
+    "min_repetitions": 6,
+    "min_span_chars": 24,
+    "name": "exact_short_period_fail_closed_guard",
+    "reference_used_at_inference": false,
+    "scope": "one independently decoded 30-second anonymous stream segment"
+  },
+  "metric": {
+    "assignment": "one permutation per system and full meeting",
+    "name": "full_meeting_cpCER",
+    "normalization": "nfkc_casefold_unicode_letters_numbers_v1",
+    "sacer_valid_meetings": 0
+  },
+  "schema": "streaming_v043_eval36_anonymous_review_protocol_v1",
+  "status": "FROZEN_RESULTS_PUBLIC_CONTENT_FREE_VIEW",
+  "systems": [
+    "raw_cfg_low_packet_gated",
+    "guarded_cfg_low_packet_gated",
+    "raw_public_sortformer_v2_low_packet_gated",
+    "guarded_public_sortformer_v2_low_packet_gated"
+  ],
+  "timing_boundary": {
+    "asr_window_seconds": 30.0,
+    "components_must_not_be_summed": true,
+    "learned_native_algorithmic_lookahead_seconds": 1.056,
+    "maximum_segment_end_availability_seconds": 5.1,
+    "paced_end_to_end_latency": "NA",
+    "physical_equal_delay_hold_seconds": 4.616,
+    "public_native_algorithmic_lookahead_seconds": 1.04
+  }
+}

@@ -1,0 +1,19 @@
+panel,source,split,variant,label,cpcer,normalized_output_characters,raw_input_characters,normalized_output_length_ratio,guard_minus_comparator_delta,ci_low,ci_high
+A,learned,Eval1,Prefix,Prefix,,,,,-0.00032589212970506764,-0.0006950482158775216,-9.933406449319996e-05
+A,learned,Eval1,Suffix,Suffix,,,,,-0.013341209059801205,-0.01831193495225278,-0.009446871390527191
+A,learned,Eval1,Hash mean,Hash mean,,,,,-0.012458584541849992,-0.017041214387371162,-0.008909240822930467
+A,learned,Eval2,Prefix,Prefix,,,,,-0.00022476600253664488,-0.0003667101736957675,-7.880341738947561e-05
+A,learned,Eval2,Suffix,Suffix,,,,,-0.01918538378794933,-0.024566827376133953,-0.013701542278685976
+A,learned,Eval2,Hash mean,Hash mean,,,,,-0.01715713819363056,-0.021532196522213557,-0.01254793953256691
+B,learned,Eval1,keep_repeats_0,keep 0,1.0211626201727229,48627,136389,0.3565316851065702,,,
+B,learned,Eval1,keep_repeats_1,keep 1,1.0297376568355874,49326,136389,0.3616567318478763,,,
+B,learned,Eval1,keep_repeats_2,keep 2,1.038923741241649,50033,136389,0.3668404343458783,,,
+B,learned,Eval1,keep_repeats_3,keep 3,1.0482116669382435,50740,136389,0.37202413684388036,,,
+B,learned,Eval1,triggered_segment_abstain,segment abstain,0.9698549780022813,43239,136389,0.31702703297186724,,,
+B,learned,Eval2,keep_repeats_0,keep 0,1.0152840881724918,48969,169708,0.2885485657717963,,,
+B,learned,Eval2,keep_repeats_1,keep 1,1.0221876153932603,49910,169708,0.2940933839300445,,,
+B,learned,Eval2,keep_repeats_2,keep 2,1.0304397386292485,50902,169708,0.2999387182690268,,,
+B,learned,Eval2,keep_repeats_3,keep 3,1.0390771750124423,51898,169708,0.3058076225045372,,,
+B,learned,Eval2,triggered_segment_abstain,segment abstain,0.9717918666816511,41402,169708,0.24396021401466048,,,
+B,all-empty anchor,Eval1,all_empty,empty,1.0,0,,0.0,,,
+B,all-empty anchor,Eval2,all_empty,empty,1.0,0,,0.0,,,

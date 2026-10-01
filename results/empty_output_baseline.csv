@@ -1,0 +1,4 @@
+stratum,reference_characters,substitutions,deletions,insertions,errors,cpcer
+Eval1,49096,0,49096,0,49096,1.0
+Eval2,62287,0,62287,0,62287,1.0
+Pooled,111383,0,111383,0,111383,1.0

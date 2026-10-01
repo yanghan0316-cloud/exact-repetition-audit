@@ -1,0 +1,262 @@
+{
+  "schema": "whisper_control_comparison_postprimary_protocol_v4",
+  "status": "FROZEN_BEFORE_POST_PRIMARY_CAP224_CONTROL_EXECUTION",
+  "protocol_id": "whisper_control_comparison_postprimary_v4",
+  "purpose": "Post-primary descriptive comparison of the sealed max-448 outputs, a max-224 fixed-window T0 re-decode, and a compression-branch-only single-sample temperature fallback. V4 preserves the V3 scientific choices and restores the original AISHELL per-manifest batch grouping so greedy FP16 decoding is compared under the parent batching semantics.",
+  "claim_boundary": {
+    "confirmatory": false,
+    "post_primary": true,
+    "reference_open": true,
+    "retuning_allowed": false,
+    "fixed_independent_30_second_windows": true,
+    "previous_context": false,
+    "no_speech_gate": false,
+    "low_logprob_only_t0_trigger": false,
+    "compression_branch_only": true,
+    "force_one_underlying_generate_call_per_fixed_window": true,
+    "official_openai_cli_replication": false,
+    "official_openai_longform_replication": false,
+    "t0_parent_batch_grouping_replayed": true,
+    "fallback_original_decode_batch_members_retained": true,
+    "predecode_input_binding_receipt_verified": true,
+    "description": "Fixed-window compression-triggered single-sample temperature fallback using OpenAI's 2.4 compression and -1.0 average-logprob thresholds. T0 replays the source-manifest batch grouping, and fallback retains every member and position of each active record's original T0 batch; this is not the complete OpenAI CLI or long-form algorithm."
+  },
+  "output_root": "experiments/whisper_control_comparison_postprimary_v4",
+  "supersedes_failed_execution": {
+    "failure_receipt": "experiments/whisper_control_comparison_postprimary_v3/EXECUTION_FAILURE_RECEIPT.json",
+    "failure_receipt_sha256": "0854823b050f51c5b86e7852242667de89c96ab93e219d0111477fd24374ca9c",
+    "decoder_log": "experiments/whisper_control_comparison_postprimary_v3/aishell5/decoder.stdout.log",
+    "decoder_log_sha256": "1efc19ed6a2900d3e7c4d30b94a484893b517c9093234f985a2bbbaeec2875ad",
+    "frozen_protocol": "configs/whisper_control_comparison_postprimary_v3.json",
+    "frozen_protocol_sha256": "38af75be0bb8e75bbced0049150ad20b2452153468ce740186e55b2bbb4bed70",
+    "freeze_receipt": "experiments/whisper_control_comparison_postprimary_v3/PROTOCOL_FREEZE_RECEIPT.json",
+    "freeze_receipt_sha256": "bbf58ae269d5ef17d9a3e983b49d5a0ddca922fc82ba934e6a67653499d732bf",
+    "misp_decoder_summary": "experiments/whisper_control_comparison_postprimary_v3/misp2022/decoder_summary.json",
+    "misp_decoder_summary_sha256": "079b2202a45da2f57dad45094867a41331d46ab69f7043366589b771d05bb382",
+    "misp_score": "experiments/whisper_control_comparison_postprimary_v3/misp2022/control_cpcer_fourteen_systems.json",
+    "misp_score_sha256": "03dd3a6e536e6edfcdb991525a37b2181e4b8475cbd37b7050484cc7641ea5a2",
+    "two_corpus_results_available": false,
+    "formal_results_available": false,
+    "repair": "Replay the original AISHELL per-(system, session) manifest batching for T0, preventing cross-manifest FP16 greedy batch regrouping while retaining all V3 decoding controls."
+  },
+  "source_artifacts": {
+    "aishell5": {
+      "root": "experiments/streaming_v035_aishell5_eval36_fullmeeting_v1",
+      "combined_hypotheses": "experiments/streaming_v035_aishell5_eval36_fullmeeting_v1/meeting_full_hypotheses_four_systems.jsonl",
+      "combined_hypotheses_sha256": "5f86ba75d981b9be117421775ba3862eae0e43460c5a2ff29bd2f0fe5c4d44ac",
+      "references": "experiments/streaming_v035_aishell5_eval36_fullmeeting_v1/meeting_full_references.jsonl",
+      "pre_reference_receipt": "experiments/streaming_v035_aishell5_eval36_fullmeeting_v1/PRE_REFERENCE_RECEIPT_V12.json",
+      "audio_manifest_glob": "*/*/decoder_neutral_audio_aishell5_eval_fullmeeting.jsonl",
+      "expected_sessions": 36,
+      "expected_raw_rows": 7296,
+      "expected_rows_per_source": 3648
+    },
+    "misp2022": {
+      "root": "experiments/streaming_v035_misp2022_eval8_v1",
+      "combined_hypotheses": "experiments/streaming_v035_misp2022_eval8_v1/meeting_full_hypotheses_four_systems.jsonl",
+      "combined_hypotheses_sha256": "58dc3261ec1646ea75f485ff02d6c651f6277831a6fa28a94a45df57ef3a94bc",
+      "references": "experiments/streaming_v035_misp2022_eval8_v1/meeting_full_references.jsonl",
+      "pre_reference_receipt": "experiments/streaming_v035_misp2022_eval8_v1/PRE_REFERENCE_RECEIPT.json",
+      "audio_manifest": "experiments/streaming_v035_misp2022_eval8_v1/decoder_neutral_audio_misp2022_eval8.jsonl",
+      "expected_sessions": 8,
+      "expected_raw_rows": 2736,
+      "expected_rows_per_source": 1368
+    }
+  },
+  "systems": {
+    "learned": {
+      "raw448": "raw_cfg_low_packet_gated",
+      "guard448": "guarded_cfg_low_packet_gated",
+      "cap224": "control_cap224_cfg_low_packet_gated",
+      "cap224_guard": "control_cap224_guarded_cfg_low_packet_gated",
+      "cap224_fallback": "control_cap224_fallback_cfg_low_packet_gated",
+      "cap224_fallback_guard": "control_cap224_fallback_guarded_cfg_low_packet_gated",
+      "cap224_compression_abstention": "control_cap224_cr24_abstain_cfg_low_packet_gated"
+    },
+    "public": {
+      "raw448": "raw_public_sortformer_v2_low_packet_gated",
+      "guard448": "guarded_public_sortformer_v2_low_packet_gated",
+      "cap224": "control_cap224_public_sortformer_v2_low_packet_gated",
+      "cap224_guard": "control_cap224_guarded_public_sortformer_v2_low_packet_gated",
+      "cap224_fallback": "control_cap224_fallback_public_sortformer_v2_low_packet_gated",
+      "cap224_fallback_guard": "control_cap224_fallback_guarded_public_sortformer_v2_low_packet_gated",
+      "cap224_compression_abstention": "control_cap224_cr24_abstain_public_sortformer_v2_low_packet_gated"
+    }
+  },
+  "frozen_whisper": {
+    "model_dir": "models/whisper-base",
+    "repository": "openai/whisper-base",
+    "commit": "e37978b90ca9030d5170a5c07aadb050351a65bb",
+    "weights_sha256": "07cadb9f25677c8d50df603e66a98fbd842cce45047139baeb16e6219a1e807b",
+    "config_sha256": "a153c53883a6799b6f056b4a8d1a515c9926d03994682ba88a7616618d7da0c1",
+    "language": "zh",
+    "task": "transcribe",
+    "no_timestamps": true,
+    "segment_boundary_seconds": 30.0,
+    "independent_windows": true,
+    "previous_context": false,
+    "condition_on_prev_tokens": false,
+    "return_timestamps": false,
+    "force_unique_generate_call": true,
+    "num_beams": 1,
+    "num_return_sequences": 1
+  },
+  "decode_grouping": {
+    "batch_size": 8,
+    "aishell5": {
+      "group_key": [
+        "system",
+        "session"
+      ],
+      "group_order": "first_appearance_in_concatenated_source_manifests",
+      "within_group_order": "original_manifest_row_order",
+      "cross_group_batches": false,
+      "partial_final_batch_per_group": true,
+      "expected_groups": 72
+    },
+    "misp2022": {
+      "group_key": [
+        "entire_original_manifest"
+      ],
+      "group_order": "single_original_manifest",
+      "within_group_order": "original_manifest_row_order",
+      "cross_group_batches": false,
+      "partial_final_batch_per_group": true,
+      "expected_groups": 1
+    },
+    "fallback": {
+      "grouping": "original_decode_batch_with_inactive_members_retained",
+      "batch_size": 8,
+      "adopt_active_records_only": true,
+      "attempt_sidecar_active_records_only": true,
+      "sampling_seed_batch_index": "original_decode_batch_global_index"
+    }
+  },
+  "cap224_decode": {
+    "temperature": 0.0,
+    "do_sample": false,
+    "num_beams": 1,
+    "num_return_sequences": 1,
+    "condition_on_prev_tokens": false,
+    "return_timestamps": false,
+    "force_unique_generate_call": true,
+    "max_new_tokens": 224,
+    "save_avg_logprob_openai": true,
+    "prefix_consistency_audit": {
+      "finished_before_cap_requires_exact_sealed_raw_text": true,
+      "cap_hit_requires_sealed_raw_prefix_after_terminal_u_fffd_strip": true,
+      "terminal_u_fffd_boundary_handling": "For cap-hit rows only, strip terminal U+FFFD characters before the prefix test and record row/character counts; retain the unmodified decoded text for scoring.",
+      "mismatch_action": "abort"
+    }
+  },
+  "compression_ratio": {
+    "definition": "len(text.encode('utf-8')) / len(zlib.compress(text.encode('utf-8')))",
+    "threshold_exclusive": 2.4,
+    "empty_text_ratio": 0.0
+  },
+  "temperature_fallback": {
+    "name": "fixed_window_compression_triggered_single_sample_temperature_fallback_with_openai_thresholds",
+    "trigger": "cap224 T0 decoded-text UTF-8 zlib compression ratio > 2.4",
+    "low_logprob_only_t0_trigger": false,
+    "temperatures": [
+      0.2,
+      0.4,
+      0.6,
+      0.8,
+      1.0
+    ],
+    "max_new_tokens": 224,
+    "do_sample": true,
+    "single_sample_trajectory_per_temperature": true,
+    "best_of": 1,
+    "num_beams": 1,
+    "num_return_sequences": 1,
+    "condition_on_prev_tokens": false,
+    "return_timestamps": false,
+    "force_unique_generate_call": true,
+    "sampling_controls": {
+      "top_k": 0,
+      "top_p": 1.0,
+      "typical_p": 1.0,
+      "min_p": null,
+      "epsilon_cutoff": 0.0,
+      "eta_cutoff": 0.0,
+      "repetition_penalty": 1.0,
+      "no_repeat_ngram_size": 0
+    },
+    "candidate_acceptance": {
+      "compression_ratio_max": 2.4,
+      "avg_logprob_openai_min": -1.0,
+      "include_first_eos": true,
+      "no_eos_denominator": "generated_steps_plus_one",
+      "last_attempt_returned_if_all_fail": true
+    },
+    "no_speech_equivalence": {
+      "implemented": false,
+      "reason": "This fixed-window diagnostic does not add the OpenAI CLI/long-form no-speech path."
+    },
+    "sampling_seed": 20260725,
+    "sampling_seed_formula": "base_seed + corpus_offset + temperature_index*100000 + original_decode_batch_global_index",
+    "sampling_seed_corpus_offsets": {
+      "aishell5": 0,
+      "misp2022": 10000000
+    },
+    "batch_size": 8,
+    "device": "cuda"
+  },
+  "exact_period_guard": {
+    "core": "src/realmeetsep/asr_repetition_guard_v035.py",
+    "max_period_chars": 12,
+    "min_repetitions": 6,
+    "min_span_chars": 24,
+    "keep_repetitions": 2
+  },
+  "scoring": {
+    "metric": "full-meeting cpCER",
+    "generic_scorer": "scripts/score_meeting_cpcer.py",
+    "misp_binding_scorer": "scripts/score_meeting_cpcer_misp2022_eval8_v1.py",
+    "aishell5_strata": [
+      "Eval1",
+      "Eval2",
+      "pooled"
+    ],
+    "misp_strata": [
+      "pooled"
+    ],
+    "paired_contrasts": [
+      "every_arm_vs_raw448",
+      "cap224_fallback_vs_cap224"
+    ],
+    "paired_bootstrap_draws": 50000,
+    "paired_bootstrap_seed": 20260725
+  },
+  "execution_rules": {
+    "source_artifacts_read_only": true,
+    "v1_artifacts_read_only": true,
+    "refuse_overwrite": true,
+    "freeze_receipt_required_before_prepare": true,
+    "predecode_receipt_required_before_decode": true,
+    "bind_all_source_hashes": true,
+    "bind_every_audio_sha256": true,
+    "preserve_raw448_and_guard448_text_exactly": true,
+    "write_only_under_v4_output_root": true,
+    "v2_failure_artifacts_read_only": true,
+    "v3_failure_artifacts_read_only": true
+  },
+  "implementation": {
+    "runner": "scripts/run_whisper_control_comparison_postprimary_v4.py",
+    "decoder": "scripts/decode_whisper_cap224_fallback_postprimary_v4.py",
+    "fallback_core": "src/realmeetsep/asr_whisper_fallback_v039.py",
+    "prefix_smoke": "scripts/audit_whisper_cap224_prefix_smoke_v4.py",
+    "fallback_tests": [
+      "tests/test_asr_whisper_fallback_v039.py",
+      "tests/test_asr_whisper_fallback_batch_v039.py",
+      "tests/test_whisper_control_postprimary_v4_contract.py",
+      "tests/test_whisper_control_postprimary_v4_cardinality.py"
+    ],
+    "frozen_decoder_reference": "scripts/decode_whisper_meeting.py",
+    "hf_generation_reference": "transformers/models/whisper/generation_whisper.py",
+    "hf_generation_reference_sha256": "f6cbc3599bcc8b9b5194b83c17c5d1dde568d38f6f6419caa2618cf39ec73949",
+    "transformers_version": "4.57.6"
+  }
+}

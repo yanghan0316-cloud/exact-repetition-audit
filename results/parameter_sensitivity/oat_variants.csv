@@ -1,0 +1,13 @@
+variant_id,varied_axis,varied_value,max_period_chars,min_repetitions,min_span_chars,keep_repetitions,gate_role,protocol_neighbor_key,parameter_selection_authorized
+default,default,0,12,6,24,2,frozen_default,,False
+max_period_chars_4,max_period_chars,4,4,6,24,2,remote_stress,max_period_chars=4,False
+max_period_chars_8,max_period_chars,8,8,6,24,2,one_step_neighbor,max_period_chars=8,False
+max_period_chars_16,max_period_chars,16,16,6,24,2,one_step_neighbor,max_period_chars=16,False
+min_repetitions_4,min_repetitions,4,12,4,24,2,one_step_neighbor,min_repetitions=4,False
+min_repetitions_8,min_repetitions,8,12,8,24,2,one_step_neighbor,min_repetitions=8,False
+min_repetitions_10,min_repetitions,10,12,10,24,2,remote_stress,min_repetitions=10,False
+min_span_chars_16,min_span_chars,16,12,6,16,2,one_step_neighbor,min_span_chars=16,False
+min_span_chars_32,min_span_chars,32,12,6,32,2,one_step_neighbor,min_span_chars=32,False
+min_span_chars_48,min_span_chars,48,12,6,48,2,remote_stress,min_span_chars=48,False
+keep_repetitions_1,keep_repetitions,1,12,6,24,1,one_step_neighbor,keep_repetitions=1,False
+keep_repetitions_3,keep_repetitions,3,12,6,24,3,one_step_neighbor,keep_repetitions=3,False

@@ -1,0 +1,163 @@
+{
+  "bindings": {
+    "detailed_session_result_source": {
+      "inherited_sections": [
+        "sessions",
+        "reproducibility",
+        "claim_boundary"
+      ],
+      "sha256": "f58e4afee85eac71f0576bb7b8fe1b69acfe663c1e4a97ec0c438816506b95d9"
+    },
+    "guard_paired_analysis": {
+      "sha256": "f2f9786574f2bc5189e35f5bbabae5328b424eb966a5a482459604793dcc7c6a"
+    },
+    "manifest": {
+      "sha256": "41ba57cfc5053fcf4b4754f8b169b2d0955f23ecaa95f8414f3199c26e579941"
+    },
+    "pre_reference_receipt": {
+      "pass": true,
+      "sha256": "a28e136db8526e003c0d50c0527b938fff664aed3e626d62a55e2db7cd13e338",
+      "status": "SCREEN12_SELECTOR_OUTPUTS_SEALED_REFERENCE_CLOSED"
+    },
+    "protocol": {
+      "sha256": "321ca5887558cd889397a6514a85db7aea4e145b061c638397d2f9a4e3b24b96"
+    },
+    "selector_paired_analysis": {
+      "sha256": "2e237cbeb5eb44c8e58008239596c829da4bfff50ecd9aea19d30e16c703c086",
+      "status": "COMPLETE_OPENED_RESULT_INFORMED_DIAGNOSTIC_NON_PRIMARY"
+    }
+  },
+  "claim_boundary": {
+    "crop_diagnostic_only": true,
+    "main_conference_winner_established": false,
+    "method_or_threshold_retuning_authorized": false,
+    "named_or_cross_meeting_identity_claim": false,
+    "opened_result_informed": true,
+    "paper_primary": false,
+    "physical_separation_improvement_claim_from_guard": false,
+    "v039_is_primary_winner": false
+  },
+  "evaluation": {
+    "access_label": "FIXED_OPENED_UPSTREAM_DOWNSTREAM_OUTCOME_UNSEEN_DEVELOPMENT_SCREEN_NON_PRIMARY",
+    "duration_seconds_per_meeting": 900.0,
+    "historical_test_access_disclosed": true,
+    "meetings": 12,
+    "name": "streaming_v039_fixed_screen12_900_v1",
+    "one_assignment_per_system_crop": true,
+    "paper_primary": false,
+    "reference_policy": "linear_clip",
+    "test_used_in_this_evaluation": false,
+    "total_duration_seconds": 10800.0,
+    "unit": "initial 900 s crop from each selected Train meeting",
+    "window_local_permutations": false
+  },
+  "generated_at_local_date": "2026-07-21",
+  "guard_evidence": {
+    "contrast": "v035-guarded cfg_low_packet_gated minus raw cfg_low_packet_gated cpCER",
+    "error_delta_guarded_minus_raw": -47276,
+    "exact_two_sided_sign_test_p_non_ties": 0.00048828125,
+    "guard_events": 151,
+    "guard_modified_records": 143,
+    "guard_removed_characters": 57540,
+    "guarded_errors": 41726,
+    "interpretation": "Strong non-primary evidence for decoder-loop containment; this is text postprocessing and not physical-separation evidence.",
+    "leave_one_meeting_out_micro_range": [
+      -0.6854839913426375,
+      -0.5891797974956563
+    ],
+    "losses": 0,
+    "meeting_macro_cpcer_delta": -0.6440501996769419,
+    "paired_meeting_bootstrap_50000_micro_95_ci": [
+      -0.8099610139157861,
+      -0.49527694771705916
+    ],
+    "pooled_micro_cpcer_delta_guarded_minus_raw": -0.647740662592826,
+    "raw_errors": 89002,
+    "reference_chars": 72986,
+    "relative_error_reduction": 0.5311790746275364,
+    "ties": 0,
+    "wins": 12
+  },
+  "paired_uncertainty": {
+    "interpretation": "Both paired bootstrap intervals and both leave-one-meeting-out ranges cross zero. The analysis is descriptive because Screen12 is opened and non-primary.",
+    "leave_one_meeting_out_macro_delta_range": [
+      -0.0017908634600139574,
+      0.0009042307513570783
+    ],
+    "leave_one_meeting_out_micro_delta_range": [
+      -0.001599597138498443,
+      0.0008305401477174401
+    ],
+    "macro_cpcer_delta_percentile_95_ci": [
+      -0.005214202793818424,
+      0.0024402200460489944
+    ],
+    "micro_cpcer_delta_percentile_95_ci": [
+      -0.0048883701104664844,
+      0.002327729934798231
+    ],
+    "samples": 50000,
+    "seed": 20260721,
+    "statistical_superiority_claim_permitted": false,
+    "unit": "meeting_crop"
+  },
+  "primary_pivot": {
+    "authorized_primary_contrast": "guarded_cfg_low_packet_gated minus raw_cfg_low_packet_gated full-meeting cpCER",
+    "execution_protocol": {
+      "sha256": "0f9cf8a447dcc8bc104cd59c7d6c8ff7894f6b69e4b4197fecbd8d12372c0b13"
+    },
+    "primary_outcome_in_this_artifact": false,
+    "v039_primary_execution_authorized": false
+  },
+  "registered_advance_rule": {
+    "decision": "FAIL",
+    "downstream_primary_retained": "v035-guarded CFG_LOW",
+    "method_disposition": "ABLATION_ONLY",
+    "pooled_delta_strictly_below_zero": true,
+    "reason": "Only 4 of 9 non-tied meetings are wins, below the registered one-half requirement.",
+    "v039_primary12_eligible": false,
+    "wins_at_least_half_of_non_tied_meetings": false,
+    "worst_meeting_absolute_cpcer_harm_at_most_0_02": true
+  },
+  "schema": "streaming_v039_fixed_screen12_900_canonical_result_v2",
+  "selector_actions": {
+    "action_granularity": "one shared all-four-slot decision per 30 s chunk",
+    "candidate_action_coverage": 0.04722222222222222,
+    "candidate_actions": 17,
+    "chunks": 360,
+    "parent_actions": 343
+  },
+  "selector_contrast": {
+    "definition": "v039_cfg_v034_confidence_loop_rescue_chunk minus v035-guarded cfg_low_packet_gated cpCER",
+    "delta_v039_minus_guarded_cfg": {
+      "errors": -58,
+      "losses": 5,
+      "mean_paired_meeting_cpcer": -0.0008797549047811862,
+      "non_tied_meetings": 9,
+      "pooled_micro_cpcer": -0.0007946729509769046,
+      "ties": 3,
+      "wins": 4,
+      "wins_among_non_tied": 4,
+      "worst_meeting": "R0020_M0193",
+      "worst_meeting_cpcer_harm": 0.009142439202779296,
+      "worst_meeting_error_harm": 50
+    },
+    "guarded_cfg": {
+      "errors": 41726,
+      "meeting_macro_cpcer": 0.5688196695276074,
+      "pooled_micro_cpcer": 0.571698681939002
+    },
+    "lower_is_better": true,
+    "reference_chars": 72986,
+    "v039": {
+      "errors": 41668,
+      "meeting_macro_cpcer": 0.5679399146228262,
+      "pooled_micro_cpcer": 0.5709040089880251
+    }
+  },
+  "status": "SCREEN12_COMPLETE_ADVANCE_FAIL_SELECTOR_ABLATION_ONLY",
+  "supersedes": {
+    "reason": "Version 1 was aggregated before the selector paired-analysis artifact existed. Its scores and advance decision remain unchanged; version 2 binds the completed paired analysis and replaces the stale uncertainty placeholder.",
+    "sha256": "f58e4afee85eac71f0576bb7b8fe1b69acfe663c1e4a97ec0c438816506b95d9"
+  }
+}

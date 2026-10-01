@@ -1,0 +1,5 @@
+# Preserve the exact bytes of frozen files and their recorded SHA-256 values.
+* -text
+*.py diff=python
+*.pdf binary
+*.gz binary

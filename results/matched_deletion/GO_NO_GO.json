@@ -1,0 +1,305 @@
+{
+  "delta_definition": "canonical_guard_cpcer_minus_comparator_cpcer",
+  "frozen_rules": {
+    "inconclusive": "Neither the go nor stop rule is met.",
+    "matched_budget_go": "Guard micro cpCER is lower than prefix, suffix, triggered abstain, and the mean hash-delete result on both learned splits.",
+    "matched_budget_stop": "One comparator has lower micro cpCER on both learned splits and its comparator-minus-guard interval is below zero on at least one learned split.",
+    "matched_budget_strong_go": "matched_budget_go holds and every corresponding guard-minus-comparator paired 95% interval is below zero."
+  },
+  "keep_repetition_diagnostics": [
+    {
+      "canonical_keep2_no_worse": false,
+      "comparator": "keep_repeats_0",
+      "micro_cpcer_delta_keep2_minus_comparator": 0.017761121068926185,
+      "source": "learned",
+      "split": "Eval1"
+    },
+    {
+      "canonical_keep2_no_worse": false,
+      "comparator": "keep_repeats_1",
+      "micro_cpcer_delta_keep2_minus_comparator": 0.009186084406061593,
+      "source": "learned",
+      "split": "Eval1"
+    },
+    {
+      "canonical_keep2_no_worse": true,
+      "comparator": "keep_repeats_3",
+      "micro_cpcer_delta_keep2_minus_comparator": -0.009287925696594427,
+      "source": "learned",
+      "split": "Eval1"
+    },
+    {
+      "canonical_keep2_no_worse": false,
+      "comparator": "keep_repeats_0",
+      "micro_cpcer_delta_keep2_minus_comparator": 0.015155650456756627,
+      "source": "learned",
+      "split": "Eval2"
+    },
+    {
+      "canonical_keep2_no_worse": false,
+      "comparator": "keep_repeats_1",
+      "micro_cpcer_delta_keep2_minus_comparator": 0.008252123235988248,
+      "source": "learned",
+      "split": "Eval2"
+    },
+    {
+      "canonical_keep2_no_worse": true,
+      "comparator": "keep_repeats_3",
+      "micro_cpcer_delta_keep2_minus_comparator": -0.008637436383193925,
+      "source": "learned",
+      "split": "Eval2"
+    },
+    {
+      "canonical_keep2_no_worse": false,
+      "comparator": "keep_repeats_0",
+      "micro_cpcer_delta_keep2_minus_comparator": 0.016946390744663517,
+      "source": "public",
+      "split": "Eval1"
+    },
+    {
+      "canonical_keep2_no_worse": false,
+      "comparator": "keep_repeats_1",
+      "micro_cpcer_delta_keep2_minus_comparator": 0.008778719243930259,
+      "source": "public",
+      "split": "Eval1"
+    },
+    {
+      "canonical_keep2_no_worse": true,
+      "comparator": "keep_repeats_3",
+      "micro_cpcer_delta_keep2_minus_comparator": -0.00914534788984846,
+      "source": "public",
+      "split": "Eval1"
+    },
+    {
+      "canonical_keep2_no_worse": false,
+      "comparator": "keep_repeats_0",
+      "micro_cpcer_delta_keep2_minus_comparator": 0.016504246471976496,
+      "source": "public",
+      "split": "Eval2"
+    },
+    {
+      "canonical_keep2_no_worse": false,
+      "comparator": "keep_repeats_1",
+      "micro_cpcer_delta_keep2_minus_comparator": 0.00855716281085941,
+      "source": "public",
+      "split": "Eval2"
+    },
+    {
+      "canonical_keep2_no_worse": true,
+      "comparator": "keep_repeats_3",
+      "micro_cpcer_delta_keep2_minus_comparator": -0.00855716281085941,
+      "source": "public",
+      "split": "Eval2"
+    }
+  ],
+  "learned_decision_checks": [
+    {
+      "comparator": "matched_prefix",
+      "comparator_minus_guard_bootstrap_95ci": [
+        9.933406449319996e-05,
+        0.0006950482158775216
+      ],
+      "guard_interval_below_zero": true,
+      "guard_lower_micro_cpcer": true,
+      "guard_minus_comparator_bootstrap_95ci": [
+        -0.0006950482158775216,
+        -9.933406449319996e-05
+      ],
+      "micro_cpcer_delta_guard_minus_comparator": -0.00032589212970506764,
+      "split": "Eval1"
+    },
+    {
+      "comparator": "matched_suffix",
+      "comparator_minus_guard_bootstrap_95ci": [
+        0.009446871390527191,
+        0.01831193495225278
+      ],
+      "guard_interval_below_zero": true,
+      "guard_lower_micro_cpcer": true,
+      "guard_minus_comparator_bootstrap_95ci": [
+        -0.01831193495225278,
+        -0.009446871390527191
+      ],
+      "micro_cpcer_delta_guard_minus_comparator": -0.013341209059801205,
+      "split": "Eval1"
+    },
+    {
+      "comparator": "matched_hash_delete_seed_mean",
+      "comparator_minus_guard_bootstrap_95ci": [
+        0.008909240822930467,
+        0.017041214387371162
+      ],
+      "guard_interval_below_zero": true,
+      "guard_lower_micro_cpcer": true,
+      "guard_minus_comparator_bootstrap_95ci": [
+        -0.017041214387371162,
+        -0.008909240822930467
+      ],
+      "micro_cpcer_delta_guard_minus_comparator": -0.012458584541849992,
+      "split": "Eval1"
+    },
+    {
+      "comparator": "triggered_segment_abstain",
+      "comparator_minus_guard_bootstrap_95ci": [
+        -0.09213443585944402,
+        -0.04806007894777279
+      ],
+      "guard_interval_below_zero": false,
+      "guard_lower_micro_cpcer": false,
+      "guard_minus_comparator_bootstrap_95ci": [
+        0.04806007894777279,
+        0.09213443585944402
+      ],
+      "micro_cpcer_delta_guard_minus_comparator": 0.06906876323936777,
+      "split": "Eval1"
+    },
+    {
+      "comparator": "matched_prefix",
+      "comparator_minus_guard_bootstrap_95ci": [
+        7.880341738947561e-05,
+        0.0003667101736957675
+      ],
+      "guard_interval_below_zero": true,
+      "guard_lower_micro_cpcer": true,
+      "guard_minus_comparator_bootstrap_95ci": [
+        -0.0003667101736957675,
+        -7.880341738947561e-05
+      ],
+      "micro_cpcer_delta_guard_minus_comparator": -0.00022476600253664488,
+      "split": "Eval2"
+    },
+    {
+      "comparator": "matched_suffix",
+      "comparator_minus_guard_bootstrap_95ci": [
+        0.013701542278685976,
+        0.024566827376133953
+      ],
+      "guard_interval_below_zero": true,
+      "guard_lower_micro_cpcer": true,
+      "guard_minus_comparator_bootstrap_95ci": [
+        -0.024566827376133953,
+        -0.013701542278685976
+      ],
+      "micro_cpcer_delta_guard_minus_comparator": -0.01918538378794933,
+      "split": "Eval2"
+    },
+    {
+      "comparator": "matched_hash_delete_seed_mean",
+      "comparator_minus_guard_bootstrap_95ci": [
+        0.01254793953256691,
+        0.021532196522213557
+      ],
+      "guard_interval_below_zero": true,
+      "guard_lower_micro_cpcer": true,
+      "guard_minus_comparator_bootstrap_95ci": [
+        -0.021532196522213557,
+        -0.01254793953256691
+      ],
+      "micro_cpcer_delta_guard_minus_comparator": -0.01715713819363056,
+      "split": "Eval2"
+    },
+    {
+      "comparator": "triggered_segment_abstain",
+      "comparator_minus_guard_bootstrap_95ci": [
+        -0.09089490196981877,
+        -0.027895684517031283
+      ],
+      "guard_interval_below_zero": false,
+      "guard_lower_micro_cpcer": false,
+      "guard_minus_comparator_bootstrap_95ci": [
+        0.027895684517031283,
+        0.09089490196981877
+      ],
+      "micro_cpcer_delta_guard_minus_comparator": 0.058647871947597414,
+      "split": "Eval2"
+    }
+  ],
+  "matched_budget_go": false,
+  "matched_budget_stop": true,
+  "matched_budget_strong_go": false,
+  "negative_favors_canonical_guard": true,
+  "protocol_rule_scope": "matched_budget_P0_1_only",
+  "public_descriptive_checks": [
+    {
+      "bootstrap_95ci": [
+        -0.00036673274678870134,
+        1.8243248183323947e-05
+      ],
+      "comparator": "matched_prefix",
+      "micro_cpcer_delta_guard_minus_comparator": -0.00016294606485253382,
+      "split": "Eval1"
+    },
+    {
+      "bootstrap_95ci": [
+        -0.01527331251854893,
+        -0.00712640424741471
+      ],
+      "comparator": "matched_suffix",
+      "micro_cpcer_delta_guard_minus_comparator": -0.0110192276356526,
+      "split": "Eval1"
+    },
+    {
+      "bootstrap_95ci": [
+        -0.014487368542904682,
+        -0.007133094799017798
+      ],
+      "comparator": "matched_hash_delete_seed_mean",
+      "micro_cpcer_delta_guard_minus_comparator": -0.010672967247840996,
+      "split": "Eval1"
+    },
+    {
+      "bootstrap_95ci": [
+        0.04004030512501249,
+        0.07881571379199313
+      ],
+      "comparator": "triggered_segment_abstain",
+      "micro_cpcer_delta_guard_minus_comparator": 0.05947531367117484,
+      "split": "Eval1"
+    },
+    {
+      "bootstrap_95ci": [
+        -0.0004946918490022675,
+        -0.00012894818200612904
+      ],
+      "comparator": "matched_prefix",
+      "micro_cpcer_delta_guard_minus_comparator": -0.0002889848604042577,
+      "split": "Eval2"
+    },
+    {
+      "bootstrap_95ci": [
+        -0.017531016844782983,
+        -0.008277507486984992
+      ],
+      "comparator": "matched_suffix",
+      "micro_cpcer_delta_guard_minus_comparator": -0.012795607430121855,
+      "split": "Eval2"
+    },
+    {
+      "bootstrap_95ci": [
+        -0.015295584650618269,
+        -0.008041724412928471
+      ],
+      "comparator": "matched_hash_delete_seed_mean",
+      "micro_cpcer_delta_guard_minus_comparator": -0.01161291013106001,
+      "split": "Eval2"
+    },
+    {
+      "bootstrap_95ci": [
+        0.04304739230808948,
+        0.08768528670927947
+      ],
+      "comparator": "triggered_segment_abstain",
+      "micro_cpcer_delta_guard_minus_comparator": 0.06397803715060928,
+      "split": "Eval2"
+    }
+  ],
+  "schema": "eval36_matched_deletion_baselines_v1_go_no_go",
+  "status": "MATCHED_BUDGET_STOP",
+  "stop_evidence": [
+    {
+      "comparator": "triggered_segment_abstain",
+      "comparator_minus_guard_interval_below_zero_on_at_least_one_split": true,
+      "lower_micro_cpcer_than_guard_on_both_learned_splits": true
+    }
+  ]
+}

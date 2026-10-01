@@ -1,0 +1,364 @@
+{
+  "agreement": {
+    "control_exact": {
+      "denominator": 16,
+      "numerator": 16,
+      "value": 1.0,
+      "wilson_95_ci": [
+        0.8063923194655637,
+        1.0
+      ]
+    },
+    "control_joint_labels": [
+      {
+        "count": 1,
+        "reviewer_a_label": "CONTROL_MISSED_REPETITION_ARTIFACT",
+        "reviewer_b_label": "CONTROL_MISSED_REPETITION_ARTIFACT"
+      },
+      {
+        "count": 15,
+        "reviewer_a_label": "CONTROL_NO_OBVIOUS_REPETITION",
+        "reviewer_b_label": "CONTROL_NO_OBVIOUS_REPETITION"
+      }
+    ],
+    "overall_cohen_kappa": {
+      "cohen_kappa": 0.8057889822595706,
+      "expected_agreement": 0.6039201183431953,
+      "observed_agreement": 0.9230769230769231
+    },
+    "overall_exact": {
+      "denominator": 104,
+      "numerator": 96,
+      "value": 0.9230769230769231,
+      "wilson_95_ci": [
+        0.8555044538374418,
+        0.960508246308945
+      ]
+    },
+    "triggered_cohen_kappa": {
+      "cohen_kappa": 0.5104311543810847,
+      "expected_agreement": 0.8143078512396694,
+      "observed_agreement": 0.9090909090909091
+    },
+    "triggered_exact": {
+      "denominator": 88,
+      "numerator": 80,
+      "value": 0.9090909090909091,
+      "wilson_95_ci": [
+        0.8307460942048916,
+        0.9532135785238329
+      ]
+    },
+    "triggered_joint_labels": [
+      {
+        "count": 1,
+        "reviewer_a_label": "AMBIGUOUS",
+        "reviewer_b_label": "GUARD_CORRECT_ARTIFACT_REMOVAL"
+      },
+      {
+        "count": 1,
+        "reviewer_a_label": "GUARD_CORRECT_ARTIFACT_REMOVAL",
+        "reviewer_b_label": "AMBIGUOUS"
+      },
+      {
+        "count": 75,
+        "reviewer_a_label": "GUARD_CORRECT_ARTIFACT_REMOVAL",
+        "reviewer_b_label": "GUARD_CORRECT_ARTIFACT_REMOVAL"
+      },
+      {
+        "count": 3,
+        "reviewer_a_label": "GUARD_CORRECT_ARTIFACT_REMOVAL",
+        "reviewer_b_label": "GUARD_FALSE_POSITIVE_SPEECH_REMOVAL"
+      },
+      {
+        "count": 3,
+        "reviewer_a_label": "GUARD_FALSE_POSITIVE_SPEECH_REMOVAL",
+        "reviewer_b_label": "GUARD_CORRECT_ARTIFACT_REMOVAL"
+      },
+      {
+        "count": 5,
+        "reviewer_a_label": "GUARD_FALSE_POSITIVE_SPEECH_REMOVAL",
+        "reviewer_b_label": "GUARD_FALSE_POSITIVE_SPEECH_REMOVAL"
+      }
+    ]
+  },
+  "analysis_policy": {
+    "ambiguous_and_invalid_retained": true,
+    "confidence_used_to_override_labels": false,
+    "disagreements_retained": true,
+    "human_label_changes_or_adjudication": false,
+    "intervals": "two-sided 95% Wilson; descriptive for the fixed audited sample",
+    "private_fields_not_exported": [
+      "audio path",
+      "session and slot",
+      "segment timestamps",
+      "raw, guarded, or removed text",
+      "guard event summary",
+      "reviewer_id",
+      "notes"
+    ]
+  },
+  "claim_boundary": "The review establishes nonzero false-removal and missed-loop risk within the audited sample; it does not establish a corpus-wide safety rate.",
+  "controls": {
+    "dual_missed_fraction": {
+      "denominator": 16,
+      "numerator": 1,
+      "value": 0.0625,
+      "wilson_95_ci": [
+        0.01111934476464252,
+        0.28328737570298945
+      ]
+    },
+    "dual_missed_repetition_artifact": 1,
+    "dual_no_obvious_repetition": 15,
+    "scope_note": "Controls audit missed obvious repetition; they do not estimate the guard's false-positive speech-removal rate."
+  },
+  "empty_output_baseline": {
+    "definition": "For an empty hypothesis, S=I=0 and D=N_ref, so cpCER is exactly 1.0.",
+    "role": "absolute no-transcription anchor, not a competing ASR system",
+    "rows": [
+      {
+        "cpcer": 1.0,
+        "deletions": 49096,
+        "errors": 49096,
+        "insertions": 0,
+        "reference_characters": 49096,
+        "stratum": "Eval1",
+        "substitutions": 0
+      },
+      {
+        "cpcer": 1.0,
+        "deletions": 62287,
+        "errors": 62287,
+        "insertions": 0,
+        "reference_characters": 62287,
+        "stratum": "Eval2",
+        "substitutions": 0
+      },
+      {
+        "cpcer": 1.0,
+        "deletions": 111383,
+        "errors": 111383,
+        "insertions": 0,
+        "reference_characters": 111383,
+        "stratum": "Pooled",
+        "substitutions": 0
+      }
+    ],
+    "score_csv_sha256": "92dfad6432b4abf96f52492c9fdf643dcff82d3a220f7518e4d9a9b37c321f84"
+  },
+  "membership": {
+    "items": 104,
+    "split_arm": [
+      {
+        "arm": "cfg",
+        "controls_dual_clear": 4,
+        "controls_dual_missed": 0,
+        "dual_correct": 15,
+        "dual_false_positive": 4,
+        "removed_characters": 12258,
+        "split": "Eval1",
+        "triggered": 22,
+        "unresolved": 3
+      },
+      {
+        "arm": "public",
+        "controls_dual_clear": 4,
+        "controls_dual_missed": 0,
+        "dual_correct": 19,
+        "dual_false_positive": 1,
+        "removed_characters": 12259,
+        "split": "Eval1",
+        "triggered": 22,
+        "unresolved": 2
+      },
+      {
+        "arm": "cfg",
+        "controls_dual_clear": 4,
+        "controls_dual_missed": 0,
+        "dual_correct": 20,
+        "dual_false_positive": 0,
+        "removed_characters": 15304,
+        "split": "Eval2",
+        "triggered": 22,
+        "unresolved": 2
+      },
+      {
+        "arm": "public",
+        "controls_dual_clear": 3,
+        "controls_dual_missed": 1,
+        "dual_correct": 21,
+        "dual_false_positive": 0,
+        "removed_characters": 13190,
+        "split": "Eval2",
+        "triggered": 22,
+        "unresolved": 1
+      }
+    ],
+    "triggered_events": 88,
+    "untriggered_controls": 16
+  },
+  "reviewers": {
+    "reviewer_a": {
+      "artifact_removal_among_determinate_triggered": {
+        "denominator": 87,
+        "numerator": 79,
+        "value": 0.9080459770114943,
+        "wilson_95_ci": [
+          0.8289143521052874,
+          0.9526671077449133
+        ]
+      },
+      "confidence": {
+        "high": 74,
+        "low": 22,
+        "medium": 8
+      },
+      "control_labels": {
+        "CONTROL_MISSED_REPETITION_ARTIFACT": 1,
+        "CONTROL_NO_OBVIOUS_REPETITION": 15
+      },
+      "false_positive_among_determinate_triggered": {
+        "denominator": 87,
+        "numerator": 8,
+        "value": 0.09195402298850575,
+        "wilson_95_ci": [
+          0.047332892255086745,
+          0.17108564789471262
+        ]
+      },
+      "private_notes_present": 8,
+      "triggered_labels": {
+        "AMBIGUOUS": 1,
+        "GUARD_CORRECT_ARTIFACT_REMOVAL": 79,
+        "GUARD_FALSE_POSITIVE_SPEECH_REMOVAL": 8
+      }
+    },
+    "reviewer_b": {
+      "artifact_removal_among_determinate_triggered": {
+        "denominator": 87,
+        "numerator": 79,
+        "value": 0.9080459770114943,
+        "wilson_95_ci": [
+          0.8289143521052874,
+          0.9526671077449133
+        ]
+      },
+      "confidence": {
+        "high": 74,
+        "low": 30
+      },
+      "control_labels": {
+        "CONTROL_MISSED_REPETITION_ARTIFACT": 1,
+        "CONTROL_NO_OBVIOUS_REPETITION": 15
+      },
+      "false_positive_among_determinate_triggered": {
+        "denominator": 87,
+        "numerator": 8,
+        "value": 0.09195402298850575,
+        "wilson_95_ci": [
+          0.047332892255086745,
+          0.17108564789471262
+        ]
+      },
+      "private_notes_present": 8,
+      "triggered_labels": {
+        "AMBIGUOUS": 1,
+        "GUARD_CORRECT_ARTIFACT_REMOVAL": 79,
+        "GUARD_FALSE_POSITIVE_SPEECH_REMOVAL": 8
+      }
+    }
+  },
+  "sampling_design": {
+    "all_guard_events": 1019,
+    "all_removed_characters": 400578,
+    "control_selection": "16 deterministic hash-ranked untriggered controls balanced by split and arm",
+    "probability_sample_of_all_guard_events": false,
+    "reviewed_guard_events": 88,
+    "reviewed_removed_characters": 53011,
+    "risk_enriched_by_maximum_removal_items": true,
+    "scope_note": "Fractions characterize this fixed, risk-enriched audit sample and are not corpus-wide precision or false-positive-rate estimates.",
+    "triggered_selection": "72 recording-by-arm maximum-removal events plus 16 deterministic hash-ranked triggered events balanced by split and arm"
+  },
+  "schema": "eval36_two_listener_safety_review_aggregate_v2",
+  "source_bindings": {
+    "FREEZE_RECEIPT.json": {
+      "sha256": "6bf20e08ba9a4381cceb3dc23a7825f6009012265b37088ab421d9f4226c82a9"
+    },
+    "canonical_bundle": {
+      "sha256": "c91348b0067e46ce8199f7b460b9fe0539e8c3ef7e6f8bc3fa1adee5668f4dbf"
+    },
+    "manifest.jsonl": {
+      "sha256": "a9db8e4a0763a87d1c7588f43b3b713e306b997fa8093637680ce9f74c1a25a8"
+    },
+    "reviewer1_worksheet.csv": {
+      "sha256": "6ed452e82db9668295e8f63067eabfec8860ad7b58d592ecdeaa2b2e0d7cfe9a"
+    },
+    "reviewer2_worksheet.csv": {
+      "sha256": "eb922fd77f552d97a570e7d08c0bcbaba5339114411a6d2e25bedf10235e5503"
+    },
+    "score_csv": {
+      "sha256": "92dfad6432b4abf96f52492c9fdf643dcff82d3a220f7518e4d9a9b37c321f84"
+    }
+  },
+  "status": "COMPLETE_UNADJUDICATED_TWO_LISTENER_REVIEW",
+  "triggered_safety": {
+    "artifact_removal_among_exact_determinate_agreements": {
+      "denominator": 80,
+      "numerator": 75,
+      "value": 0.9375,
+      "wilson_95_ci": [
+        0.8618985123272557,
+        0.973010624329158
+      ]
+    },
+    "at_least_one_ambiguous_label": {
+      "denominator": 88,
+      "numerator": 2,
+      "value": 0.022727272727272728,
+      "wilson_95_ci": [
+        0.006254928263812166,
+        0.07912545355267586
+      ]
+    },
+    "at_least_one_false_positive_label": {
+      "denominator": 88,
+      "numerator": 11,
+      "value": 0.125,
+      "wilson_95_ci": [
+        0.07125274152192247,
+        0.21011755847674674
+      ]
+    },
+    "at_least_one_technical_invalid_label": {
+      "denominator": 88,
+      "numerator": 0,
+      "value": 0.0,
+      "wilson_95_ci": [
+        0.0,
+        0.0418270666648922
+      ]
+    },
+    "disagreement_pairs": {
+      "AMBIGUOUS | GUARD_CORRECT_ARTIFACT_REMOVAL": 2,
+      "GUARD_CORRECT_ARTIFACT_REMOVAL | GUARD_FALSE_POSITIVE_SPEECH_REMOVAL": 6
+    },
+    "dual_correct_artifact_removal": 75,
+    "dual_false_positive_speech_removal": 5,
+    "false_positive_among_exact_determinate_agreements": {
+      "denominator": 80,
+      "numerator": 5,
+      "value": 0.0625,
+      "wilson_95_ci": [
+        0.026989375670841982,
+        0.13810148767274424
+      ]
+    },
+    "removed_characters_by_outcome": {
+      "dual_correct": 44456,
+      "dual_false_positive": 2654,
+      "unresolved": 5901
+    },
+    "unresolved_disagreements": 8
+  }
+}

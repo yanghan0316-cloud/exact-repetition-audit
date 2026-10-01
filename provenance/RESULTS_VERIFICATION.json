@@ -1,0 +1,15 @@
+{
+  "schema": "public_result_subset_verification_v1",
+  "status": "PASS",
+  "manifest_entries_verified": 43,
+  "source_and_release_hashes_verified": true,
+  "structured_data_inspection": "All selected JSON/CSV fields and all JSONL rows inspected by the builder; path-valued metadata and speaker assignment dictionaries removed where recorded. No transcript strings, audio paths, or per-item listening labels included.",
+  "direct_baseline_rows": {
+    "aggregate": 48,
+    "meeting": 704,
+    "content_free_traces": 80256
+  },
+  "paper_table_I_rounded_cpcer_cells_verified": 42,
+  "pdf_figure_metadata_inspected": true,
+  "historical_svg_external_links_or_scripts": 0
+}

@@ -1,0 +1,492 @@
+{
+  "files": [
+    {
+      "release_bytes": 241780,
+      "release_path": "figures/asr_pipeline.pdf",
+      "release_sha256": "31d3efd4e8f5f85a5eb85b06e7f893e724989dbcd1e6127d77d0bd3656ad9942",
+      "source": "output/tmm_revision_v003/source/Figures/asr_pipeline_anonymous.pdf",
+      "source_sha256": "31d3efd4e8f5f85a5eb85b06e7f893e724989dbcd1e6127d77d0bd3656ad9942",
+      "transformation": "Byte-identical copy of reviewed content-free artifact"
+    },
+    {
+      "release_bytes": 18168,
+      "release_path": "figures/deletion_action_map.pdf",
+      "release_sha256": "9a224bf3ceb29cd21db347026dd2ee7aa8ffdd2eb1aa4effaeed1fdbd5367669",
+      "source": "output/tmm_revision_v003/source/figure1_eval36_posthoc_action_map_anonymous.pdf",
+      "source_sha256": "9a224bf3ceb29cd21db347026dd2ee7aa8ffdd2eb1aa4effaeed1fdbd5367669",
+      "transformation": "Byte-identical copy of reviewed content-free artifact"
+    },
+    {
+      "release_bytes": 1852,
+      "release_path": "figures/deletion_action_map_data.csv",
+      "release_sha256": "135185159fe469fe4e349538e6cb8cd85e698c2697ebb53871067b2c59ea01da",
+      "removed_fields": [],
+      "rows": 18,
+      "source": "code/ali_overlap_sep/paper/figures/v044/figure1_eval36_posthoc_action_map_data.csv",
+      "source_sha256": "5b432fae300dee206853d87c9e34c4acf6a260f2b5a8ef90afcfebba6f02ecb8",
+      "transformation": "CSV projection; retained cell values unchanged"
+    },
+    {
+      "release_bytes": 88647,
+      "release_path": "figures/historical_v043/figure1_method_clocks.svg",
+      "release_sha256": "695c356375852a871d0bc7c45d499c1ce6248154011ed3490f4edd99abf64481",
+      "source": "code/ali_overlap_sep/paper/artifacts/v043/anonymous_review_artifact_v043/figures/figure1_method_clocks.svg",
+      "source_sha256": "695c356375852a871d0bc7c45d499c1ce6248154011ed3490f4edd99abf64481",
+      "transformation": "Byte-identical copy of reviewed content-free artifact"
+    },
+    {
+      "release_bytes": 76855,
+      "release_path": "figures/historical_v043/figure2_exact_period_guard.svg",
+      "release_sha256": "756081e565bac13e79df34ead4c61077ac51ddcc93cd7521702e51dac21bb109",
+      "source": "code/ali_overlap_sep/paper/artifacts/v043/anonymous_review_artifact_v043/figures/figure2_exact_period_guard.svg",
+      "source_sha256": "756081e565bac13e79df34ead4c61077ac51ddcc93cd7521702e51dac21bb109",
+      "transformation": "Byte-identical copy of reviewed content-free artifact"
+    },
+    {
+      "release_bytes": 80716,
+      "release_path": "figures/historical_v043/figure3_eval36_split_first.svg",
+      "release_sha256": "92199ea4a633f58d271feedad32cae6526aac96c12e7d7d54f97e1387942da68",
+      "source": "code/ali_overlap_sep/paper/artifacts/v043/anonymous_review_artifact_v043/figures/figure3_eval36_split_first.svg",
+      "source_sha256": "92199ea4a633f58d271feedad32cae6526aac96c12e7d7d54f97e1387942da68",
+      "transformation": "Byte-identical copy of reviewed content-free artifact"
+    },
+    {
+      "release_bytes": 14402,
+      "release_path": "results/alignment_retention/alignment_retention_absolute_postprimary_v046.csv",
+      "release_sha256": "9660dd27fbc8b4f7b6c52341dd9fa1e6cd655c572004c871d9c687b5c1abcaa0",
+      "removed_fields": [],
+      "rows": 56,
+      "source": "code/ali_overlap_sep/paper/generated/v046/postprimary_alignment_retention/alignment_retention_absolute_postprimary_v046.csv",
+      "source_sha256": "e447af0411ec152fc55e61f6a8448a01bb3a9ba2041ed8c597f0c1b96fec5dac",
+      "transformation": "CSV projection; retained cell values unchanged"
+    },
+    {
+      "release_bytes": 690050,
+      "release_path": "results/alignment_retention/alignment_retention_paired_recording_postprimary_v046.csv",
+      "release_sha256": "f656c7d7447a954d628d0667c236beabf873152ebfd165f849568358acf608ce",
+      "removed_fields": [],
+      "rows": 1120,
+      "source": "code/ali_overlap_sep/paper/generated/v046/postprimary_alignment_retention/alignment_retention_paired_recording_postprimary_v046.csv",
+      "source_sha256": "3ada94ed1ae964c33d9c083d20d15fa45f6c1182b4b19f63d40a25cb980165f1",
+      "transformation": "CSV projection; retained cell values unchanged"
+    },
+    {
+      "release_bytes": 57212,
+      "release_path": "results/alignment_retention/alignment_retention_paired_summary_postprimary_v046.csv",
+      "release_sha256": "67b5f57f809dec449fba9c0c421880da870804ba661496a13acf793a91201b05",
+      "removed_fields": [],
+      "rows": 112,
+      "source": "code/ali_overlap_sep/paper/generated/v046/postprimary_alignment_retention/alignment_retention_paired_summary_postprimary_v046.csv",
+      "source_sha256": "81b239531ebec31e208a62f83cce4dfddd0ece6493a46b623ba0f8922b4f53f2",
+      "transformation": "CSV projection; retained cell values unchanged"
+    },
+    {
+      "release_bytes": 157967,
+      "release_path": "results/alignment_retention/alignment_retention_recording_postprimary_v046.csv",
+      "release_sha256": "3f0df95e51808c71720bd2a97a4bd9a124dae4eb04b6b0d4e49136acd3715885",
+      "removed_fields": [
+        "cp_assignment"
+      ],
+      "rows": 616,
+      "source": "code/ali_overlap_sep/paper/generated/v046/postprimary_alignment_retention/alignment_retention_recording_postprimary_v046.csv",
+      "source_sha256": "5ddccf0478d134c4dbb48a3895a4728d4bc5b400a2a86be54f6986479b2c020d",
+      "transformation": "CSV projection; retained cell values unchanged"
+    },
+    {
+      "release_bytes": 260799,
+      "release_path": "results/alignment_retention/summary.json",
+      "release_sha256": "1f55e8d2c113176923482ad27bf918a9bca7de826f28a044f5446f103240b59e",
+      "removed_fields": [
+        "/corpora/aishell5/input_bindings/details_csv/path",
+        "/corpora/aishell5/input_bindings/hypotheses_jsonl/path",
+        "/corpora/aishell5/input_bindings/references_jsonl/path",
+        "/corpora/misp2022/input_bindings/details_csv/path",
+        "/corpora/misp2022/input_bindings/hypotheses_jsonl/path",
+        "/corpora/misp2022/input_bindings/references_jsonl/path",
+        "/freeze_receipt/path",
+        "/protocol/path"
+      ],
+      "source": "code/ali_overlap_sep/paper/generated/v046/postprimary_alignment_retention/alignment_retention_postprimary_v046.json",
+      "source_sha256": "a288739f79cd184068f82f64e37d07832ed28e7605d2ad1bd490c27e9cdd482a",
+      "transformation": "JSON projection; numeric fields unchanged; sorted UTF-8 serialization"
+    },
+    {
+      "release_bytes": 6224,
+      "release_path": "results/auxiliary/screen12_negative_ablation.json",
+      "release_sha256": "d5415d42f4ac0c0581c7cc160dd87db45bbfd1a35c0c3ad2ec05d5c956b485a2",
+      "removed_fields": [
+        "/bindings/detailed_session_result_source/path",
+        "/bindings/guard_paired_analysis/path",
+        "/bindings/manifest/path",
+        "/bindings/pre_reference_receipt/path",
+        "/bindings/protocol/path",
+        "/bindings/selector_paired_analysis/path",
+        "/primary_pivot/execution_protocol/path",
+        "/supersedes/path"
+      ],
+      "source": "code/ali_overlap_sep/experiments/streaming_v039_fixed_screen12_900_v1/SCREEN12_CANONICAL_RESULT_v2.json",
+      "source_sha256": "9030e6ae221f231bdcde259fd685a767157d737c7d0bc7676f3998521b34d4da",
+      "transformation": "JSON projection; numeric fields unchanged; sorted UTF-8 serialization"
+    },
+    {
+      "release_bytes": 29173,
+      "release_path": "results/auxiliary/train12_analysis.json",
+      "release_sha256": "48f968b072c9a19d06a7293ba6c57a23367feca2850d50c31a64f5fd58a82627",
+      "removed_fields": [
+        "/bindings/details_csv/path",
+        "/bindings/guard_summaries[]/path",
+        "/bindings/learned_receipt/path",
+        "/bindings/manifest/path",
+        "/bindings/pre_reference_receipt/path",
+        "/bindings/public_receipt/path",
+        "/bindings/references/path",
+        "/bindings/score_json/path"
+      ],
+      "source": "code/ali_overlap_sep/experiments/streaming_v035_train12_four_system_stress_v1/train12_four_system_stress_analysis_v1.json",
+      "source_sha256": "c2ce930f532053e252d6bbec0d2fa42688ee130b03e6491531f999c83b0eb028",
+      "transformation": "JSON projection; numeric fields unchanged; sorted UTF-8 serialization"
+    },
+    {
+      "release_bytes": 9576,
+      "release_path": "results/auxiliary/train12_recording_scores.csv",
+      "release_sha256": "7f5be961fb622377eeee05db22599f8344d9848bf091f50aa8ea1dde73ad906a",
+      "removed_fields": [
+        "cp_assignment"
+      ],
+      "rows": 48,
+      "source": "code/ali_overlap_sep/experiments/streaming_v035_train12_four_system_stress_v1/meeting_full_cpcer_four_systems.csv",
+      "source_sha256": "96cb24ce05206612a6ff25d926dc9d95c57c1a52a067882ee79a25fd9440a073",
+      "transformation": "CSV projection; retained cell values unchanged"
+    },
+    {
+      "release_bytes": 10391,
+      "release_path": "results/decoder_controls/RESULTS.csv",
+      "release_sha256": "057b7644a35e006fce0b76428d03af9980f32386df88f9d5e97578daf8aa50ef",
+      "removed_fields": [],
+      "rows": 56,
+      "source": "code/ali_overlap_sep/experiments/whisper_control_comparison_postprimary_v5/analysis/RESULTS.csv",
+      "source_sha256": "65fe840b41defcb8c09edf635d5b7944c995bbfab671403711604ba39396fca6",
+      "transformation": "CSV projection; retained cell values unchanged"
+    },
+    {
+      "release_bytes": 111161,
+      "release_path": "results/decoder_controls/RESULTS.json",
+      "release_sha256": "449b9501650dfb2e4d1b5a58b53874610cc5a8656bb70b4a746f5bd8b700e6cb",
+      "removed_fields": [
+        "/corpora/aishell5/score/path",
+        "/corpora/aishell5/transform/combined_hypotheses/path_after_publish",
+        "/corpora/misp2022/score/path",
+        "/corpora/misp2022/transform/combined_hypotheses/path_after_publish",
+        "/v5_protocol"
+      ],
+      "source": "code/ali_overlap_sep/experiments/whisper_control_comparison_postprimary_v5/analysis/RESULTS.json",
+      "source_sha256": "3291c877935306a6d22d3fca273c05706a812a9b8c08314e167714cb71300eef",
+      "transformation": "JSON projection; numeric fields unchanged; sorted UTF-8 serialization"
+    },
+    {
+      "release_bytes": 102451,
+      "release_path": "results/decoder_controls/aishell5_recording_scores.csv",
+      "release_sha256": "42de8b0b50a3f0ef0a77bfcd4d58587a158f6d48d3bd18e8d97ac4a1b6ec5e0b",
+      "removed_fields": [
+        "cp_assignment"
+      ],
+      "rows": 504,
+      "source": "code/ali_overlap_sep/experiments/whisper_control_comparison_postprimary_v5/aishell5/control_cpcer_fourteen_systems.csv",
+      "source_sha256": "efe17a067d12e05f09a32c0fba2ff8f7ae100d25629da16508c319f9f94e92a8",
+      "transformation": "CSV projection; retained cell values unchanged"
+    },
+    {
+      "release_bytes": 7737,
+      "release_path": "results/decoder_controls/aishell5_transform_summary.json",
+      "release_sha256": "38a1916e20edb3859c67e8e3fcace1174802c8cdc9a8c013b35a1122e8044791",
+      "removed_fields": [
+        "/combined_hypotheses/path_after_publish"
+      ],
+      "source": "code/ali_overlap_sep/experiments/whisper_control_comparison_postprimary_v5/aishell5/control_transform_summary.json",
+      "source_sha256": "9b08852f2d631feaf8ae86537dd434def1083ab6aacf6e91d746252d4ee5bcae",
+      "transformation": "JSON projection; numeric fields unchanged; sorted UTF-8 serialization"
+    },
+    {
+      "release_bytes": 24338,
+      "release_path": "results/decoder_controls/misp2022_recording_scores.csv",
+      "release_sha256": "b569ad6b76c2c7cea53b767147445aa718252778b13c5f111f1319300691638d",
+      "removed_fields": [
+        "cp_assignment"
+      ],
+      "rows": 112,
+      "source": "code/ali_overlap_sep/experiments/whisper_control_comparison_postprimary_v5/misp2022/control_cpcer_fourteen_systems.csv",
+      "source_sha256": "4135f25048890a376142a59ddaea98aa797d8affd8942593af61e8ee47e12f71",
+      "transformation": "CSV projection; retained cell values unchanged"
+    },
+    {
+      "release_bytes": 7688,
+      "release_path": "results/decoder_controls/misp2022_transform_summary.json",
+      "release_sha256": "082cfa4a463359adb259345adf3707349446f4d472518da07b1f113f3f32fcb4",
+      "removed_fields": [
+        "/combined_hypotheses/path_after_publish"
+      ],
+      "source": "code/ali_overlap_sep/experiments/whisper_control_comparison_postprimary_v5/misp2022/control_transform_summary.json",
+      "source_sha256": "5339d38568f9fc0804a6e799a570665ab3fe1a4907eed44972e3da051805c9ea",
+      "transformation": "JSON projection; numeric fields unchanged; sorted UTF-8 serialization"
+    },
+    {
+      "release_bytes": 64729,
+      "release_path": "results/direct_baselines/SUMMARY.json",
+      "release_sha256": "a651553873c3ac7118fe14ad21b814c8eda06422992c86c089f7b6e8987851d2",
+      "removed_fields": [
+        "/audits/input_bindings_before_reference_access/aishell5/hypotheses/path",
+        "/audits/input_bindings_before_reference_access/misp2022/hypotheses/path",
+        "/audits/reference_bindings/aishell5/path",
+        "/audits/reference_bindings/misp2022/path",
+        "/protocol/path",
+        "/tokenizer/model_dir"
+      ],
+      "source": "code/ali_overlap_sep/experiments/delooping_direct_baselines_v046_postprimary_v1/SUMMARY.json",
+      "source_sha256": "3f9fa6cd4b685c6e71a6fbfa2462c2262aa74d59eee70761779ed3070d9bbfdf",
+      "transformation": "JSON projection; numeric fields unchanged; sorted UTF-8 serialization"
+    },
+    {
+      "release_bytes": 14679,
+      "release_path": "results/direct_baselines/aggregate_metrics.csv",
+      "release_sha256": "fecab276f867a0a8c388e77e67a16976ab64701872c6ada2efeece23f622ad1f",
+      "removed_fields": [],
+      "rows": 48,
+      "source": "code/ali_overlap_sep/experiments/delooping_direct_baselines_v046_postprimary_v1/aggregate_metrics.csv",
+      "source_sha256": "7bcff73989328c44d5deeef8c5fbdb1b386590f33ad8845ba100bb0d989eaf1c",
+      "transformation": "CSV projection; retained cell values unchanged"
+    },
+    {
+      "release_bytes": 2387971,
+      "release_path": "results/direct_baselines/content_free_event_audit.jsonl.gz",
+      "release_sha256": "bb6d4ce60d06c60ca63a6e3fdaf549ad66fe92bc2f2e79d4681bfb8b549f45fa",
+      "rows": 80256,
+      "source": "code/ali_overlap_sep/experiments/delooping_direct_baselines_v046_postprimary_v1/content_free_event_audit.jsonl",
+      "source_sha256": "6c56ec094e741083f10b589c2d42b318cd75c6d3df96aae1853986af5a3e755f",
+      "transformation": "Schema-audited content-free JSONL; lossless gzip with mtime=0",
+      "uncompressed_sha256": "6c56ec094e741083f10b589c2d42b318cd75c6d3df96aae1853986af5a3e755f"
+    },
+    {
+      "release_bytes": 147914,
+      "release_path": "results/direct_baselines/meeting_metrics.csv",
+      "release_sha256": "777196859395ef72002c130fdfb67fea984b682a3776fa3402ee5db2d9f633d4",
+      "removed_fields": [
+        "cp_assignment"
+      ],
+      "rows": 704,
+      "source": "code/ali_overlap_sep/experiments/delooping_direct_baselines_v046_postprimary_v1/meeting_metrics.csv",
+      "source_sha256": "c613800370df80be25e38548e8514a848d9838f473910a5fc9c790402015f4cc",
+      "transformation": "CSV projection; retained cell values unchanged"
+    },
+    {
+      "release_bytes": 177,
+      "release_path": "results/empty_output_baseline.csv",
+      "release_sha256": "176972957656310b983347c32540a6cee0a471f3dee04dca6509fc0d06f4d07a",
+      "source": "code/ali_overlap_sep/paper/artifacts/v043/anonymous_review_artifact_v043/results/empty_output_baseline.csv",
+      "source_sha256": "176972957656310b983347c32540a6cee0a471f3dee04dca6509fc0d06f4d07a",
+      "transformation": "Byte-identical copy of reviewed content-free artifact"
+    },
+    {
+      "release_bytes": 5164,
+      "release_path": "results/eval36_paired_contrasts.csv",
+      "release_sha256": "50639b851feef193c4b55f5c3b36b8c750a33f17bc6c2da99275ed01ea5adfa0",
+      "source": "code/ali_overlap_sep/paper/artifacts/v043/anonymous_review_artifact_v043/results/eval36_paired_contrasts.csv",
+      "source_sha256": "50639b851feef193c4b55f5c3b36b8c750a33f17bc6c2da99275ed01ea5adfa0",
+      "transformation": "Byte-identical copy of reviewed content-free artifact"
+    },
+    {
+      "release_bytes": 15388,
+      "release_path": "results/eval36_recording_system_cpcer.csv",
+      "release_sha256": "1f1ca8ddeda1f73bd83528719154cad119fe18a49d2cbce67e02e28b2468347e",
+      "source": "code/ali_overlap_sep/paper/artifacts/v043/anonymous_review_artifact_v043/results/eval36_recording_system_cpcer.csv",
+      "source_sha256": "1f1ca8ddeda1f73bd83528719154cad119fe18a49d2cbce67e02e28b2468347e",
+      "transformation": "Byte-identical copy of reviewed content-free artifact"
+    },
+    {
+      "release_bytes": 104644,
+      "release_path": "results/eval36_summary.json",
+      "release_sha256": "637e073d8739d5703941a2abfd71b9ba00ab84309cc1b82f5266a4c66c4945e8",
+      "source": "code/ali_overlap_sep/paper/artifacts/v043/anonymous_review_artifact_v043/results/eval36_summary.json",
+      "source_sha256": "637e073d8739d5703941a2abfd71b9ba00ab84309cc1b82f5266a4c66c4945e8",
+      "transformation": "Byte-identical copy of reviewed content-free artifact"
+    },
+    {
+      "release_bytes": 10514,
+      "release_path": "results/listening/initial_aggregate.json",
+      "release_sha256": "daa6025f011f39a885f97e3dc419cfe55dfae9cc704face26bce450576e26e8b",
+      "removed_fields": [],
+      "source": "code/ali_overlap_sep/paper/artifacts/v043/anonymous_review_artifact_v043/review/listening_review_aggregate.json",
+      "source_sha256": "daa6025f011f39a885f97e3dc419cfe55dfae9cc704face26bce450576e26e8b",
+      "transformation": "JSON projection; numeric fields unchanged; sorted UTF-8 serialization"
+    },
+    {
+      "release_bytes": 185535,
+      "release_path": "results/listening/probability_aggregate.json",
+      "release_sha256": "7f5c082beeae592231b77651390e2f9f0ce271d4ce2f738ae3005e1530a99661",
+      "removed_fields": [
+        "/private_evidence_receipt_status",
+        "/source_bindings"
+      ],
+      "source": "code/ali_overlap_sep/paper/review/eval36_probability_listening_v1/analysis_v1/listening_probability_review_aggregate.json",
+      "source_sha256": "16990bb4f263950c87f4200b2bc7fd7a42d209a7343ab925f6ea6675ce7d8899",
+      "transformation": "JSON projection; numeric fields unchanged; sorted UTF-8 serialization"
+    },
+    {
+      "release_bytes": 38570,
+      "release_path": "results/listening/probability_summary.json",
+      "release_sha256": "8b1768687c5210a50a411058db241c0b26ae7630f0f17d05618981ef8d709af6",
+      "removed_fields": [],
+      "source": "code/ali_overlap_sep/paper/review/eval36_probability_listening_v1/analysis_v1/publication_summary.json",
+      "source_sha256": "e19c02a5ff99868ef9d39df9abdcb9a777b9ab5e4ce69cf12084365f0d8e1819",
+      "transformation": "JSON projection; numeric fields unchanged; sorted UTF-8 serialization"
+    },
+    {
+      "release_bytes": 11585,
+      "release_path": "results/listening/residual_aggregate.json",
+      "release_sha256": "2b939e97e4ecb8fd0bf7a579d0a96a87a9ddfc09250517a6b0b2ce4ded9798b4",
+      "removed_fields": [
+        "/notice"
+      ],
+      "source": "code/ali_overlap_sep/paper/review/postprimary_residual_listening_v046/analysis_postprimary_v047_corrected_unadjudicated/SUMMARY_POSTPRIMARY_V046.json",
+      "source_sha256": "8ae174f7f4d26e4abade9244d317fc7360b9eb41c5421d2e279f01191386379a",
+      "transformation": "JSON projection; numeric fields unchanged; sorted UTF-8 serialization"
+    },
+    {
+      "release_bytes": 9562,
+      "release_path": "results/matched_deletion/GO_NO_GO.json",
+      "release_sha256": "b6ce5b841e40e908b74dfe36e4781bb7c3dafd1f88433ed38ed5d5b108973dec",
+      "removed_fields": [],
+      "source": "code/ali_overlap_sep/experiments/streaming_v035_eval36_matched_deletion_baselines_v1/GO_NO_GO.json",
+      "source_sha256": "b6ce5b841e40e908b74dfe36e4781bb7c3dafd1f88433ed38ed5d5b108973dec",
+      "transformation": "JSON projection; numeric fields unchanged; sorted UTF-8 serialization"
+    },
+    {
+      "release_bytes": 126324,
+      "release_path": "results/matched_deletion/SUMMARY.json",
+      "release_sha256": "f81d2d1d78a23775a91a2d8b1ed258339dc8f6e12538fd5382c1fee78d31fb72",
+      "removed_fields": [],
+      "source": "code/ali_overlap_sep/experiments/streaming_v035_eval36_matched_deletion_baselines_v1/SUMMARY.json",
+      "source_sha256": "f81d2d1d78a23775a91a2d8b1ed258339dc8f6e12538fd5382c1fee78d31fb72",
+      "transformation": "JSON projection; numeric fields unchanged; sorted UTF-8 serialization"
+    },
+    {
+      "release_bytes": 97428,
+      "release_path": "results/matched_deletion/meeting_scores_content_free.csv",
+      "release_sha256": "f4a7bb7dc8a8a68c2b6fd5ca897f991f8deee2c6c44df081e9b1190be36a09b1",
+      "removed_fields": [],
+      "rows": 864,
+      "source": "code/ali_overlap_sep/experiments/streaming_v035_eval36_matched_deletion_baselines_v1/meeting_scores_content_free.csv",
+      "source_sha256": "f4a7bb7dc8a8a68c2b6fd5ca897f991f8deee2c6c44df081e9b1190be36a09b1",
+      "transformation": "CSV projection; retained cell values unchanged"
+    },
+    {
+      "release_bytes": 7766,
+      "release_path": "results/matched_deletion/paired_comparisons.csv",
+      "release_sha256": "844c758fa916c652694b1149589bf2e4c75b6027b6b9c9fa336af5180bcfab3e",
+      "removed_fields": [],
+      "rows": 44,
+      "source": "code/ali_overlap_sep/experiments/streaming_v035_eval36_matched_deletion_baselines_v1/paired_comparisons.csv",
+      "source_sha256": "844c758fa916c652694b1149589bf2e4c75b6027b6b9c9fa336af5180bcfab3e",
+      "transformation": "CSV projection; retained cell values unchanged"
+    },
+    {
+      "release_bytes": 22430,
+      "release_path": "results/misp2022/paired_analysis.json",
+      "release_sha256": "5324b13ad8ec147ac5cd8f4194739cf4ec4e3f7ca6ad71a5aa780adecd0f6f55",
+      "removed_fields": [
+        "/bindings/details_csv/path",
+        "/bindings/hypothesis_seal/path",
+        "/bindings/manifest/path",
+        "/bindings/protocol/path",
+        "/bindings/protocol_freeze_receipt/path",
+        "/bindings/references/path",
+        "/bindings/score/path"
+      ],
+      "source": "code/ali_overlap_sep/experiments/streaming_v035_misp2022_eval8_v1/misp2022_eval8_paired_analysis_v1.json",
+      "source_sha256": "1da0e49e3c66158ea2c7c252e3df64f58c6d2be4b9c84700dfcc19d2e190dd05",
+      "transformation": "JSON projection; numeric fields unchanged; sorted UTF-8 serialization"
+    },
+    {
+      "release_bytes": 6697,
+      "release_path": "results/misp2022/recording_scores.csv",
+      "release_sha256": "878118a3d3b4d1ad30d38bd6ca19a72497d1763acff46fb32c48c99dbfb3035d",
+      "removed_fields": [
+        "cp_assignment"
+      ],
+      "rows": 32,
+      "source": "code/ali_overlap_sep/experiments/streaming_v035_misp2022_eval8_v1/meeting_full_cpcer_four_systems.csv",
+      "source_sha256": "7918ae625d2c4c16d0d13a0840300c212156213391b2cc57960cb7cf838b5212",
+      "transformation": "CSV projection; retained cell values unchanged"
+    },
+    {
+      "release_bytes": 12841,
+      "release_path": "results/parameter_sensitivity/oat_curves.csv",
+      "release_sha256": "663d6c4e4d9bd651bad0dfcd60332eb70f86a532caab3dafdcc29d604617072c",
+      "removed_fields": [],
+      "rows": 60,
+      "source": "code/ali_overlap_sep/experiments/eval36_posthoc_oat_parameter_sensitivity_v1/oat_curves.csv",
+      "source_sha256": "e4f246a316d937ef0148970d3f016b4dec6e3e4813bd48ca027cc59f7eee6589",
+      "transformation": "CSV projection; retained cell values unchanged"
+    },
+    {
+      "release_bytes": 174391,
+      "release_path": "results/parameter_sensitivity/oat_recording_scores.csv",
+      "release_sha256": "6dcf2210ee1b3bb8da70c56ba162c056b1a154bfce09c2446d0d3945cd701eb4",
+      "removed_fields": [],
+      "rows": 864,
+      "source": "code/ali_overlap_sep/experiments/eval36_posthoc_oat_parameter_sensitivity_v1/oat_recording_scores.csv",
+      "source_sha256": "67ab0ccb058344978d340cd08c2ae77581590d64c0ae9fdd5610415dafb9033e",
+      "transformation": "CSV projection; retained cell values unchanged"
+    },
+    {
+      "release_bytes": 7201,
+      "release_path": "results/parameter_sensitivity/oat_robustness_summary.json",
+      "release_sha256": "13fcbd94833fb0a31428bb41087d78d6421e06c2cd98aefcc99a9629951e572d",
+      "removed_fields": [
+        "/bindings/bound_inputs/guard_config/path",
+        "/bindings/bound_inputs/guard_core/path",
+        "/bindings/bound_inputs/hypotheses/path",
+        "/bindings/bound_inputs/references/path",
+        "/bindings/bound_inputs/scorer/path",
+        "/bindings/freeze_receipt/path",
+        "/bindings/protocol/path"
+      ],
+      "source": "code/ali_overlap_sep/experiments/eval36_posthoc_oat_parameter_sensitivity_v1/oat_robustness_summary.json",
+      "source_sha256": "39ec5d4abb5eed37c164187b0bfbb50707a0e5b9330394dfb31fbafe6253f7e0",
+      "transformation": "JSON projection; numeric fields unchanged; sorted UTF-8 serialization"
+    },
+    {
+      "release_bytes": 21753,
+      "release_path": "results/parameter_sensitivity/oat_split_aggregates.csv",
+      "release_sha256": "ac9c7bf9577b66a77aa0e183cdff38048c03a82edc12ba08b8d1f04b3993cf4f",
+      "removed_fields": [],
+      "rows": 48,
+      "source": "code/ali_overlap_sep/experiments/eval36_posthoc_oat_parameter_sensitivity_v1/oat_split_aggregates.csv",
+      "source_sha256": "ef648487c89150e154b13afe5dcb575199abd3b25a938a688c289e894228359b",
+      "transformation": "CSV projection; retained cell values unchanged"
+    },
+    {
+      "release_bytes": 1190,
+      "release_path": "results/parameter_sensitivity/oat_variants.csv",
+      "release_sha256": "125596120e3d11669b991f2ef3c157e2c167303e614876ef76d8d8b76405596b",
+      "removed_fields": [],
+      "rows": 12,
+      "source": "code/ali_overlap_sep/experiments/eval36_posthoc_oat_parameter_sensitivity_v1/oat_variants.csv",
+      "source_sha256": "0224ace670c3c81aec72fd0750a52d4f625cd5eac13b962a3547d656f18f7246",
+      "transformation": "CSV projection; retained cell values unchanged"
+    }
+  ],
+  "listening_boundary": "Only aggregate listening results are released. Worksheets, per-item labels, comments, identities, audio, and blinding maps remain excluded. The residual summary is a public aggregate projection of a private package; its original package notice is omitted, not a grant to redistribute the private package.",
+  "manuscript": [
+    {
+      "sha256": "6bfa4e0a4314ca7b4f4bb4fcff0bdaf68cc118420cebff63091e73b5a1f44f40",
+      "source": "output/tmm_revision_v003/source/main.tex"
+    },
+    {
+      "sha256": "68a7fa607b460106808d2cd2ae900d26f2e14e554454640f018453e2e1423297",
+      "source": "output/tmm_revision_v003/source/supplement.tex"
+    }
+  ],
+  "path_base": "Source paths are relative to the authors' research archive; they are not download links.",
+  "schema": "exact_repetition_public_result_provenance_v1",
+  "scope": "Public numeric/result-only projection of existing frozen evidence; no new experiments"
+}

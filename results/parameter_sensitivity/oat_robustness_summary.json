@@ -1,0 +1,187 @@
+{
+  "analysis_scope": {
+    "bootstrap_draws_per_pair": 50000,
+    "bootstrap_seed_derivation": "raw comparison: base_seed + variant_index*4 + split_index*2 + source_index; default comparison adds 10000",
+    "bootstrap_unit": "recording",
+    "meetings": 36,
+    "one_factor_curve_points": 15,
+    "recording_score_rows": 864,
+    "sources": [
+      "learned",
+      "public"
+    ],
+    "split_aggregate_rows": 48,
+    "splits": [
+      "Eval1",
+      "Eval2"
+    ],
+    "unique_parameter_settings": 12
+  },
+  "asr_model": "openai/whisper-base@sha256:07cadb9f25677c8d50df603e66a98fbd842cce45047139baeb16e6219a1e807b",
+  "bindings": {
+    "bound_inputs": {
+      "guard_config": {
+        "sha256": "0b9d15005d0aa210f5f88e1a47a47c36101da3a804ae64610e99b5ea09e5a928"
+      },
+      "guard_core": {
+        "sha256": "2b32464dcf2c90c937d453d465da215f0fbf14bd0681785d94e45c015db4509e"
+      },
+      "hypotheses": {
+        "sha256": "5f86ba75d981b9be117421775ba3862eae0e43460c5a2ff29bd2f0fe5c4d44ac"
+      },
+      "references": {
+        "sha256": "13b532995862b71043e39abe269cff47e6bdd953e96ebaa48650555406fa06a1"
+      },
+      "scorer": {
+        "sha256": "589b445632041615d4917779ef38a1d77c462004194819b30c3c8489e3903954"
+      }
+    },
+    "freeze_receipt": {
+      "sha256": "de4b710e3031cb4aa3dca2b9ed3b2b7d23d2486e301ff1fceb6241aa5eac818e"
+    },
+    "protocol": {
+      "sha256": "bc314960e4212f8e68eb2544418aadeab30e6bdae5341b7edabbc6e0f719602b"
+    }
+  },
+  "claim_boundary": {
+    "all_predefined_oat_results_retained": true,
+    "default_parameter_change_authorized": false,
+    "eval36_parameter_selection_authorized": false,
+    "hypothesis_or_reference_text_exported": false,
+    "post_primary_diagnostic": true,
+    "primary_results_already_opened": true
+  },
+  "default_reproduction": {
+    "frozen_guarded_segment_text_exact": true,
+    "note": "The default guard was re-applied to every frozen raw segment and compared byte-for-byte at the Python string level with the paired frozen guarded segment.",
+    "segment_text_mismatches_by_source": {
+      "learned": 0,
+      "public": 0
+    }
+  },
+  "protocol_selection_rule": "No value may be selected or promoted from Eval1 or Eval2. Curves are descriptive stability diagnostics around the frozen default.",
+  "reporting_policy": "Report outcomes regardless of direction. A failed matched-budget diagnostic requires narrowing or changing the exact-localization contribution; a brittle sensitivity result cannot be repaired by selecting a new Eval value.",
+  "result_files": {
+    "one_factor_curves": "oat_curves.csv",
+    "per_recording": "oat_recording_scores.csv",
+    "split_aggregates": "oat_split_aggregates.csv",
+    "variants": "oat_variants.csv"
+  },
+  "robustness_decision": {
+    "decision": "ROBUST",
+    "default_on_wide_platform": true,
+    "eval36_parameter_selection_authorized": false,
+    "go_no_go": "GO_DEFAULT_ON_WIDE_PLATFORM",
+    "per_learned_split": {
+      "Eval1": {
+        "all_neighbors_better_than_raw": true,
+        "neighbors": 8,
+        "neighbors_better_than_raw": 8,
+        "neighbors_retaining_at_least_80pct_default_reduction": 8,
+        "neighbors_worse_than_raw": 0,
+        "retention_pass_at_least_six": true,
+        "retention_rows": [
+          {
+            "better_than_raw": true,
+            "fraction_of_default_raw_to_guard_reduction": 0.9387280614704131,
+            "neighbor": "max_period_chars=8"
+          },
+          {
+            "better_than_raw": true,
+            "fraction_of_default_raw_to_guard_reduction": 1.0264963565737615,
+            "neighbor": "max_period_chars=16"
+          },
+          {
+            "better_than_raw": true,
+            "fraction_of_default_raw_to_guard_reduction": 1.0009356658822195,
+            "neighbor": "min_repetitions=4"
+          },
+          {
+            "better_than_raw": true,
+            "fraction_of_default_raw_to_guard_reduction": 0.9986957384672092,
+            "neighbor": "min_repetitions=8"
+          },
+          {
+            "better_than_raw": true,
+            "fraction_of_default_raw_to_guard_reduction": 0.9999007627094615,
+            "neighbor": "min_span_chars=16"
+          },
+          {
+            "better_than_raw": true,
+            "fraction_of_default_raw_to_guard_reduction": 0.9992628086988573,
+            "neighbor": "min_span_chars=32"
+          },
+          {
+            "better_than_raw": true,
+            "fraction_of_default_raw_to_guard_reduction": 1.0063937168618333,
+            "neighbor": "keep_repetitions=1"
+          },
+          {
+            "better_than_raw": true,
+            "fraction_of_default_raw_to_guard_reduction": 0.9935353993592105,
+            "neighbor": "keep_repetitions=3"
+          }
+        ]
+      },
+      "Eval2": {
+        "all_neighbors_better_than_raw": true,
+        "neighbors": 8,
+        "neighbors_better_than_raw": 8,
+        "neighbors_retaining_at_least_80pct_default_reduction": 8,
+        "neighbors_worse_than_raw": 0,
+        "retention_pass_at_least_six": true,
+        "retention_rows": [
+          {
+            "better_than_raw": true,
+            "fraction_of_default_raw_to_guard_reduction": 0.9581034576937784,
+            "neighbor": "max_period_chars=8"
+          },
+          {
+            "better_than_raw": true,
+            "fraction_of_default_raw_to_guard_reduction": 1.0111105041787296,
+            "neighbor": "max_period_chars=16"
+          },
+          {
+            "better_than_raw": true,
+            "fraction_of_default_raw_to_guard_reduction": 1.000349593051838,
+            "neighbor": "min_repetitions=4"
+          },
+          {
+            "better_than_raw": true,
+            "fraction_of_default_raw_to_guard_reduction": 0.9994319112907631,
+            "neighbor": "min_repetitions=8"
+          },
+          {
+            "better_than_raw": true,
+            "fraction_of_default_raw_to_guard_reduction": 1.0003386682689681,
+            "neighbor": "min_span_chars=16"
+          },
+          {
+            "better_than_raw": true,
+            "fraction_of_default_raw_to_guard_reduction": 0.9997815043426013,
+            "neighbor": "min_span_chars=32"
+          },
+          {
+            "better_than_raw": true,
+            "fraction_of_default_raw_to_guard_reduction": 1.0056153383951494,
+            "neighbor": "keep_repetitions=1"
+          },
+          {
+            "better_than_raw": true,
+            "fraction_of_default_raw_to_guard_reduction": 0.9941224668159722,
+            "neighbor": "keep_repetitions=3"
+          }
+        ]
+      }
+    },
+    "rule_text": {
+      "brittle": "Any one-step neighbor is worse than raw on either learned split.",
+      "inconclusive": "Use when neither the corresponding go/robust nor stop/brittle rule is met.",
+      "robust": "At least six of the eight frozen one-step neighbors retain at least 80% of the default raw-to-guard micro-cpCER reduction on each learned split, and every neighbor remains better than raw on both learned splits."
+    },
+    "sensitivity_brittle_rule_pass": false,
+    "sensitivity_robust_rule_pass": true
+  },
+  "schema": "eval36_posthoc_oat_parameter_sensitivity_analysis_v1",
+  "status": "COMPLETE_POSTHOC_OAT_DIAGNOSTIC"
+}

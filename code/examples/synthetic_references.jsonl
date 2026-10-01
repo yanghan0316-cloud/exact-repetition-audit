@@ -1,0 +1,1 @@
+{"schema":"meeting_cpcer_reference_v1","metric_scope":"full_meeting","character_time_alignment_used":false,"normalization":"nfkc_casefold_unicode_letters_numbers_v1","session":"synthetic_001","split":"eval","speakers":["speaker_a","speaker_b"],"references":{"speaker_a":"abcdabcd","speaker_b":"wxyzwxyz"}}

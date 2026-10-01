@@ -1,0 +1,45 @@
+{
+  "schema": "release_core_validation_v1",
+  "validated_on": "2026-10-01",
+  "status": "PASS",
+  "checks": [
+    {
+      "command": "python -m unittest discover -s tests -v",
+      "tests": 23,
+      "failures": 0,
+      "skipped_in_recorded_validation": 0
+    },
+    {
+      "command": "python code/verify_public_tables.py",
+      "meetings": 36,
+      "score_rows": 144,
+      "bootstrap_contrasts": 12,
+      "empty_anchor_rows": 3
+    },
+    {
+      "command": "python code/verify_extended_results.py",
+      "decoder_meeting_rows": 616,
+      "decoder_aggregate_rows": 56,
+      "direct_baseline_aggregate_cells": 48,
+      "matched_deletion_rows": 864,
+      "method_traces": 80256
+    },
+    {
+      "check": "Synthetic JSONL guard/scorer integration",
+      "segments": 2,
+      "modified_segments": 1,
+      "reference_characters": 16,
+      "raw_cpcer": 1.0,
+      "guarded_cpcer": 0.0
+    },
+    {
+      "check": "Frozen decoder command help/import smoke",
+      "commands": 2
+    },
+    {
+      "check": "Original source equality",
+      "byte_identical_files": 18
+    }
+  ],
+  "scope": "No corpus audio decoding, model download, acoustic frontend rebuild, or re-review of audio was performed. Public numeric consistency and synthetic code contracts only."
+}

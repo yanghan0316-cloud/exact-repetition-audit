@@ -1,0 +1,152 @@
+{
+  "schema": "reproducibility_source_provenance_v1",
+  "source_root": "original research workspace (relative paths only)",
+  "files": [
+    {
+      "upstream_path": "code/ali_overlap_sep/paper/artifacts/v043/anonymous_review_artifact_v043/code/src/realmeetsep/__init__.py",
+      "upstream_sha256": "01ba4719c80b6fe911b091a7c05124b64eeece964e09c058ef8f9805daca546b",
+      "released_path": "code/src/realmeetsep/__init__.py",
+      "transformation": "byte-identical",
+      "released_sha256": "01ba4719c80b6fe911b091a7c05124b64eeece964e09c058ef8f9805daca546b"
+    },
+    {
+      "upstream_path": "code/ali_overlap_sep/paper/artifacts/v043/anonymous_review_artifact_v043/code/src/realmeetsep/asr_repetition_guard_v035.py",
+      "upstream_sha256": "2b32464dcf2c90c937d453d465da215f0fbf14bd0681785d94e45c015db4509e",
+      "released_path": "code/src/realmeetsep/asr_repetition_guard_v035.py",
+      "transformation": "byte-identical",
+      "released_sha256": "2b32464dcf2c90c937d453d465da215f0fbf14bd0681785d94e45c015db4509e"
+    },
+    {
+      "upstream_path": "code/ali_overlap_sep/paper/artifacts/v043/anonymous_review_artifact_v043/code/src/realmeetsep/cpcer.py",
+      "upstream_sha256": "9cba97bf328e2d596cd63e86eb82a87f953dfa4648a5049201308503b933073c",
+      "released_path": "code/src/realmeetsep/cpcer.py",
+      "transformation": "byte-identical",
+      "released_sha256": "9cba97bf328e2d596cd63e86eb82a87f953dfa4648a5049201308503b933073c"
+    },
+    {
+      "upstream_path": "code/ali_overlap_sep/paper/artifacts/v043/anonymous_review_artifact_v043/code/src/realmeetsep/textgrid.py",
+      "upstream_sha256": "97cfdf7492f5c09a109ae8189d643db8bba28d855af18489a6623c611957916d",
+      "released_path": "code/src/realmeetsep/textgrid.py",
+      "transformation": "byte-identical",
+      "released_sha256": "97cfdf7492f5c09a109ae8189d643db8bba28d855af18489a6623c611957916d"
+    },
+    {
+      "upstream_path": "code/ali_overlap_sep/src/realmeetsep/asr_delooping_baselines_v046_postprimary.py",
+      "upstream_sha256": "a920e87e7d933193e251682034aae2a66d17b998c751a4ec2820250078db0f30",
+      "released_path": "code/src/realmeetsep/asr_delooping_baselines_v046_postprimary.py",
+      "transformation": "byte-identical",
+      "released_sha256": "a920e87e7d933193e251682034aae2a66d17b998c751a4ec2820250078db0f30"
+    },
+    {
+      "upstream_path": "code/ali_overlap_sep/src/realmeetsep/asr_whisper_fallback_v039.py",
+      "upstream_sha256": "fb117cff27a5d2df5e1f63dc678c29f3c67b74523dc449920edcd09d5ed38dab",
+      "released_path": "code/src/realmeetsep/asr_whisper_fallback_v039.py",
+      "transformation": "byte-identical",
+      "released_sha256": "fb117cff27a5d2df5e1f63dc678c29f3c67b74523dc449920edcd09d5ed38dab"
+    },
+    {
+      "upstream_path": "code/ali_overlap_sep/src/realmeetsep/asr_whisper_confidence_v038.py",
+      "upstream_sha256": "a2cedd3b11621ac1cb5094235af3dabdc7b6d3ad96b9d7fcbc749f298e8ef6d5",
+      "released_path": "code/src/realmeetsep/asr_whisper_confidence_v038.py",
+      "transformation": "byte-identical",
+      "released_sha256": "a2cedd3b11621ac1cb5094235af3dabdc7b6d3ad96b9d7fcbc749f298e8ef6d5"
+    },
+    {
+      "upstream_path": "code/ali_overlap_sep/src/realmeetsep/meeting_asr.py",
+      "upstream_sha256": "1d14c19428f6ddb59767e0c5312509dc901c2179538fcb0f2738e0a34793b826",
+      "released_path": "code/src/realmeetsep/meeting_asr.py",
+      "transformation": "byte-identical",
+      "released_sha256": "1d14c19428f6ddb59767e0c5312509dc901c2179538fcb0f2738e0a34793b826"
+    },
+    {
+      "upstream_path": "code/ali_overlap_sep/src/realmeetsep/postprimary_alignment_retention_v046.py",
+      "upstream_sha256": "9c1d9eddec44584500965d8f7501c613a26cdede4facc8bcf29544ff3a482fef",
+      "released_path": "code/src/realmeetsep/postprimary_alignment_retention_v046.py",
+      "transformation": "byte-identical",
+      "released_sha256": "9c1d9eddec44584500965d8f7501c613a26cdede4facc8bcf29544ff3a482fef"
+    },
+    {
+      "upstream_path": "code/ali_overlap_sep/src/realmeetsep/postprimary_alignment_retention_bootstrap_v046.py",
+      "upstream_sha256": "b3c8d24fe38f51c03d4fcb28ccf736650fbaa22c0649a65cea238b02847b46e7",
+      "released_path": "code/src/realmeetsep/postprimary_alignment_retention_bootstrap_v046.py",
+      "transformation": "byte-identical",
+      "released_sha256": "b3c8d24fe38f51c03d4fcb28ccf736650fbaa22c0649a65cea238b02847b46e7"
+    },
+    {
+      "upstream_path": "code/ali_overlap_sep/scripts/decode_whisper_meeting.py",
+      "upstream_sha256": "f555d721bedf705959bb30326211e8a68755a37edc610d3ee0f513f210c3a264",
+      "released_path": "code/scripts/decode_whisper_meeting.py",
+      "transformation": "byte-identical",
+      "released_sha256": "f555d721bedf705959bb30326211e8a68755a37edc610d3ee0f513f210c3a264"
+    },
+    {
+      "upstream_path": "code/ali_overlap_sep/scripts/decode_whisper_cap224_fallback_postprimary_v4.py",
+      "upstream_sha256": "8f8c59e0222d15db9da037f231bc445fb478f2fa814607e0b6bf890e5f7e89ed",
+      "released_path": "code/scripts/decode_whisper_cap224_fallback_postprimary_v4.py",
+      "transformation": "byte-identical",
+      "released_sha256": "8f8c59e0222d15db9da037f231bc445fb478f2fa814607e0b6bf890e5f7e89ed"
+    },
+    {
+      "upstream_path": "code/ali_overlap_sep/paper/artifacts/v043/anonymous_review_artifact_v043/code/scripts/score_meeting_cpcer.py",
+      "upstream_sha256": "c7d76ded85ef99a6d21cb81bd39d2126c300fa0abac736fa372652c4c5c133f3",
+      "released_path": "code/scripts/score_meeting_cpcer.py",
+      "transformation": "byte-identical",
+      "released_sha256": "c7d76ded85ef99a6d21cb81bd39d2126c300fa0abac736fa372652c4c5c133f3"
+    },
+    {
+      "upstream_path": "code/ali_overlap_sep/paper/artifacts/v043/anonymous_review_artifact_v043/code/build_local_eval36_manifest.py",
+      "upstream_sha256": "6438431ec0607db3735c9b0b0363c3b58026ec8cc03d70b658274d06352038b4",
+      "released_path": "code/build_local_eval36_manifest.py",
+      "transformation": "byte-identical",
+      "released_sha256": "6438431ec0607db3735c9b0b0363c3b58026ec8cc03d70b658274d06352038b4"
+    },
+    {
+      "upstream_path": "code/ali_overlap_sep/paper/artifacts/v043/anonymous_review_artifact_v043/code/verify_external_assets.py",
+      "upstream_sha256": "38096bc54948d1d07ac1b6c357f443e954855b78c029c38fa44a7f34cce51c6e",
+      "released_path": "code/verify_external_assets.py",
+      "transformation": "byte-identical",
+      "released_sha256": "38096bc54948d1d07ac1b6c357f443e954855b78c029c38fa44a7f34cce51c6e"
+    },
+    {
+      "upstream_path": "code/ali_overlap_sep/paper/artifacts/v043/anonymous_review_artifact_v043/protocol/eval36_public_protocol.json",
+      "upstream_sha256": "d31887cd881cb97f24dd348965cfa7cc0e423461f7d1d3bb75a2cc7ee3c72803",
+      "released_path": "protocol/eval36_public_protocol.json",
+      "transformation": "byte-identical",
+      "released_sha256": "d31887cd881cb97f24dd348965cfa7cc0e423461f7d1d3bb75a2cc7ee3c72803"
+    },
+    {
+      "upstream_path": "code/ali_overlap_sep/tests/test_asr_repetition_guard_v035.py",
+      "upstream_sha256": "7d19b9579c8cdea696aa6dbf37753f9237f9a24555367f7ec3e0d537fcce291b",
+      "released_path": "tests/frozen_guard_cases.py",
+      "transformation": "byte-identical",
+      "released_sha256": "7d19b9579c8cdea696aa6dbf37753f9237f9a24555367f7ec3e0d537fcce291b"
+    },
+    {
+      "upstream_path": "code/ali_overlap_sep/tests/test_asr_delooping_baselines_v046_postprimary.py",
+      "upstream_sha256": "997baa864e1e4505cb5e32b21d6d3aaa0d94d2d8442e04e2acc681f7fce6e4ba",
+      "released_path": "tests/frozen_baseline_cases.py",
+      "transformation": "byte-identical",
+      "released_sha256": "997baa864e1e4505cb5e32b21d6d3aaa0d94d2d8442e04e2acc681f7fce6e4ba"
+    },
+    {
+      "upstream_path": "code/ali_overlap_sep/configs/whisper_control_comparison_postprimary_v4.json",
+      "upstream_sha256": "37178bf1ae35b244256b59bf0b8c0f79fc38c43ef8f707e75bbaa7391330ad65",
+      "released_path": "protocol/whisper_control_comparison_postprimary_v4.json",
+      "transformation": "Replace absolute local Transformers library path with package-relative path; protocol values unchanged. Sanitized JSON has a different hash; it is not the original execution seal.",
+      "released_sha256": "c5186e8741f6eefea63776418b663b02f2d1609edabb903fbc938f15672d8b26"
+    },
+    {
+      "upstream_path": "code/ali_overlap_sep/paper/artifacts/v043/anonymous_review_artifact_v043/code/verify_public_tables.py",
+      "upstream_sha256": "e50f478a1b33496f9af737bbdeef402adc2cce36a19e53ceeefa17eb21dbe37b",
+      "released_path": "code/verify_public_tables.py",
+      "transformation": "Keep original numeric score/bootstrap/empty-anchor verification; remove separate listening-label verification since only aggregate listening results are released.",
+      "released_sha256": "90e423125d488f79bd88838db1d4741185b0961e034a94ce7cab0bd8c7221bde"
+    }
+  ],
+  "new_release_files": [
+    "code/run_guard.py",
+    "code/verify_extended_results.py",
+    "tests/test_contracts.py",
+    "tests/test_decoder_contracts.py"
+  ]
+}

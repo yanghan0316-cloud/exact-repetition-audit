@@ -1,0 +1,28 @@
+{
+  "schema": "reproduction_environment_v1",
+  "release_validation": {
+    "python": "3.11.15",
+    "platform": "Windows 10 (build 26100)",
+    "numpy": "2.4.4",
+    "rapidfuzz": "3.14.5",
+    "torch": "2.11.0+cu128",
+    "transformers": "4.57.6",
+    "soundfile": "0.14.0"
+  },
+  "recorded_decoder_execution": {
+    "source": "whisper_control_comparison_postprimary_v4 decoder_summary.json",
+    "python": "3.11.15",
+    "platform": "Windows 10 (build 26100)",
+    "torch": "2.11.0+cu128",
+    "cuda": "12.8",
+    "gpu": "NVIDIA GeForce RTX 5070 Ti Laptop GPU",
+    "transformers": "4.57.6",
+    "note": "Transformers pin is recorded in the frozen v4 protocol. No new corpus decode was performed for this public release."
+  },
+  "dependency_scope": {
+    "requirements.txt": "Pinned numeric verification and cpCER dependencies; canonical guard has no third-party dependency.",
+    "requirements-decoder.txt": "Optional decoder source/tensor-test and Whisper tokenizer dependencies. Choose a compatible PyTorch CUDA distribution separately for GPU use.",
+    "python_minimum": "3.11",
+    "tests": "Standard-library unittest; no pytest installation required. Decoder tests skip explicitly when torch is absent."
+  }
+}

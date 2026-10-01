@@ -1,0 +1,441 @@
+{
+  "actions": 43,
+  "actions_with_any_question_disagreement": 1,
+  "actions_with_severity_disagreement": 1,
+  "adjudicated": false,
+  "agreement": {
+    "confidence": {
+      "all_categories": {
+        "categories": [
+          "HIGH",
+          "MEDIUM"
+        ],
+        "cohen_kappa": 0.0,
+        "exact_agreements": 42,
+        "expected_agreement": 0.9767441860465116,
+        "left_counts": {
+          "HIGH": 42,
+          "MEDIUM": 1
+        },
+        "n": 43,
+        "observed_agreement": 0.9767441860465116,
+        "reason": null,
+        "right_counts": {
+          "HIGH": 43
+        }
+      },
+      "determinate_only": {
+        "categories": [
+          "HIGH",
+          "MEDIUM"
+        ],
+        "cohen_kappa": 0.0,
+        "exact_agreements": 42,
+        "expected_agreement": 0.9767441860465116,
+        "left_counts": {
+          "HIGH": 42,
+          "MEDIUM": 1
+        },
+        "n": 43,
+        "observed_agreement": 0.9767441860465116,
+        "reason": null,
+        "right_counts": {
+          "HIGH": 43
+        }
+      },
+      "excluding_technical_invalid": {
+        "categories": [
+          "HIGH",
+          "MEDIUM"
+        ],
+        "cohen_kappa": 0.0,
+        "exact_agreements": 42,
+        "expected_agreement": 0.9767441860465116,
+        "left_counts": {
+          "HIGH": 42,
+          "MEDIUM": 1
+        },
+        "n": 43,
+        "observed_agreement": 0.9767441860465116,
+        "reason": null,
+        "right_counts": {
+          "HIGH": 43
+        }
+      },
+      "rows_with_either_ambiguous": 0,
+      "rows_with_either_not_applicable": 0,
+      "rows_with_either_technical_invalid": 0
+    },
+    "harm_severity": {
+      "all_categories": {
+        "categories": [
+          "MINOR",
+          "NONE"
+        ],
+        "cohen_kappa": 0.0,
+        "exact_agreements": 42,
+        "expected_agreement": 0.9767441860465116,
+        "left_counts": {
+          "MINOR": 1,
+          "NONE": 42
+        },
+        "n": 43,
+        "observed_agreement": 0.9767441860465116,
+        "reason": null,
+        "right_counts": {
+          "NONE": 43
+        }
+      },
+      "determinate_only": {
+        "categories": [
+          "MINOR",
+          "NONE"
+        ],
+        "cohen_kappa": 0.0,
+        "exact_agreements": 42,
+        "expected_agreement": 0.9767441860465116,
+        "left_counts": {
+          "MINOR": 1,
+          "NONE": 42
+        },
+        "n": 43,
+        "observed_agreement": 0.9767441860465116,
+        "reason": null,
+        "right_counts": {
+          "NONE": 43
+        }
+      },
+      "excluding_technical_invalid": {
+        "categories": [
+          "MINOR",
+          "NONE"
+        ],
+        "cohen_kappa": 0.0,
+        "exact_agreements": 42,
+        "expected_agreement": 0.9767441860465116,
+        "left_counts": {
+          "MINOR": 1,
+          "NONE": 42
+        },
+        "n": 43,
+        "observed_agreement": 0.9767441860465116,
+        "reason": null,
+        "right_counts": {
+          "NONE": 43
+        }
+      },
+      "rows_with_either_ambiguous": 0,
+      "rows_with_either_not_applicable": 0,
+      "rows_with_either_technical_invalid": 0
+    },
+    "q1_exact_loop_audio_support": {
+      "all_categories": {
+        "categories": [
+          "NOT_SUPPORTED"
+        ],
+        "cohen_kappa": null,
+        "exact_agreements": 43,
+        "expected_agreement": 1.0,
+        "left_counts": {
+          "NOT_SUPPORTED": 43
+        },
+        "n": 43,
+        "observed_agreement": 1.0,
+        "reason": "UNDEFINED_ALL_EXPECTED_AGREEMENT",
+        "right_counts": {
+          "NOT_SUPPORTED": 43
+        }
+      },
+      "determinate_only": {
+        "categories": [
+          "NOT_SUPPORTED"
+        ],
+        "cohen_kappa": null,
+        "exact_agreements": 43,
+        "expected_agreement": 1.0,
+        "left_counts": {
+          "NOT_SUPPORTED": 43
+        },
+        "n": 43,
+        "observed_agreement": 1.0,
+        "reason": "UNDEFINED_ALL_EXPECTED_AGREEMENT",
+        "right_counts": {
+          "NOT_SUPPORTED": 43
+        }
+      },
+      "excluding_technical_invalid": {
+        "categories": [
+          "NOT_SUPPORTED"
+        ],
+        "cohen_kappa": null,
+        "exact_agreements": 43,
+        "expected_agreement": 1.0,
+        "left_counts": {
+          "NOT_SUPPORTED": 43
+        },
+        "n": 43,
+        "observed_agreement": 1.0,
+        "reason": "UNDEFINED_ALL_EXPECTED_AGREEMENT",
+        "right_counts": {
+          "NOT_SUPPORTED": 43
+        }
+      },
+      "rows_with_either_ambiguous": 0,
+      "rows_with_either_not_applicable": 0,
+      "rows_with_either_technical_invalid": 0
+    },
+    "q2_guard_removed_spoken_content": {
+      "all_categories": {
+        "categories": [
+          "NO_SPEECH_REMOVED",
+          "SPEECH_REMOVED"
+        ],
+        "cohen_kappa": 0.0,
+        "exact_agreements": 42,
+        "expected_agreement": 0.9767441860465116,
+        "left_counts": {
+          "NO_SPEECH_REMOVED": 42,
+          "SPEECH_REMOVED": 1
+        },
+        "n": 43,
+        "observed_agreement": 0.9767441860465116,
+        "reason": null,
+        "right_counts": {
+          "NO_SPEECH_REMOVED": 43
+        }
+      },
+      "determinate_only": {
+        "categories": [
+          "NO_SPEECH_REMOVED",
+          "SPEECH_REMOVED"
+        ],
+        "cohen_kappa": 0.0,
+        "exact_agreements": 42,
+        "expected_agreement": 0.9767441860465116,
+        "left_counts": {
+          "NO_SPEECH_REMOVED": 42,
+          "SPEECH_REMOVED": 1
+        },
+        "n": 43,
+        "observed_agreement": 0.9767441860465116,
+        "reason": null,
+        "right_counts": {
+          "NO_SPEECH_REMOVED": 43
+        }
+      },
+      "excluding_technical_invalid": {
+        "categories": [
+          "NO_SPEECH_REMOVED",
+          "SPEECH_REMOVED"
+        ],
+        "cohen_kappa": 0.0,
+        "exact_agreements": 42,
+        "expected_agreement": 0.9767441860465116,
+        "left_counts": {
+          "NO_SPEECH_REMOVED": 42,
+          "SPEECH_REMOVED": 1
+        },
+        "n": 43,
+        "observed_agreement": 0.9767441860465116,
+        "reason": null,
+        "right_counts": {
+          "NO_SPEECH_REMOVED": 43
+        }
+      },
+      "rows_with_either_ambiguous": 0,
+      "rows_with_either_not_applicable": 0,
+      "rows_with_either_technical_invalid": 0
+    },
+    "q3_keep_two_sufficient": {
+      "all_categories": {
+        "categories": [
+          "INSUFFICIENT",
+          "SUFFICIENT"
+        ],
+        "cohen_kappa": 0.0,
+        "exact_agreements": 42,
+        "expected_agreement": 0.9767441860465116,
+        "left_counts": {
+          "INSUFFICIENT": 1,
+          "SUFFICIENT": 42
+        },
+        "n": 43,
+        "observed_agreement": 0.9767441860465116,
+        "reason": null,
+        "right_counts": {
+          "SUFFICIENT": 43
+        }
+      },
+      "determinate_only": {
+        "categories": [
+          "INSUFFICIENT",
+          "SUFFICIENT"
+        ],
+        "cohen_kappa": 0.0,
+        "exact_agreements": 42,
+        "expected_agreement": 0.9767441860465116,
+        "left_counts": {
+          "INSUFFICIENT": 1,
+          "SUFFICIENT": 42
+        },
+        "n": 43,
+        "observed_agreement": 0.9767441860465116,
+        "reason": null,
+        "right_counts": {
+          "SUFFICIENT": 43
+        }
+      },
+      "excluding_technical_invalid": {
+        "categories": [
+          "INSUFFICIENT",
+          "SUFFICIENT"
+        ],
+        "cohen_kappa": 0.0,
+        "exact_agreements": 42,
+        "expected_agreement": 0.9767441860465116,
+        "left_counts": {
+          "INSUFFICIENT": 1,
+          "SUFFICIENT": 42
+        },
+        "n": 43,
+        "observed_agreement": 0.9767441860465116,
+        "reason": null,
+        "right_counts": {
+          "SUFFICIENT": 43
+        }
+      },
+      "rows_with_either_ambiguous": 0,
+      "rows_with_either_not_applicable": 0,
+      "rows_with_either_technical_invalid": 0
+    },
+    "q4_meaningful_speech_in_window": {
+      "all_categories": {
+        "categories": [
+          "MEANINGFUL_SPEECH_PRESENT"
+        ],
+        "cohen_kappa": null,
+        "exact_agreements": 43,
+        "expected_agreement": 1.0,
+        "left_counts": {
+          "MEANINGFUL_SPEECH_PRESENT": 43
+        },
+        "n": 43,
+        "observed_agreement": 1.0,
+        "reason": "UNDEFINED_ALL_EXPECTED_AGREEMENT",
+        "right_counts": {
+          "MEANINGFUL_SPEECH_PRESENT": 43
+        }
+      },
+      "determinate_only": {
+        "categories": [
+          "MEANINGFUL_SPEECH_PRESENT"
+        ],
+        "cohen_kappa": null,
+        "exact_agreements": 43,
+        "expected_agreement": 1.0,
+        "left_counts": {
+          "MEANINGFUL_SPEECH_PRESENT": 43
+        },
+        "n": 43,
+        "observed_agreement": 1.0,
+        "reason": "UNDEFINED_ALL_EXPECTED_AGREEMENT",
+        "right_counts": {
+          "MEANINGFUL_SPEECH_PRESENT": 43
+        }
+      },
+      "excluding_technical_invalid": {
+        "categories": [
+          "MEANINGFUL_SPEECH_PRESENT"
+        ],
+        "cohen_kappa": null,
+        "exact_agreements": 43,
+        "expected_agreement": 1.0,
+        "left_counts": {
+          "MEANINGFUL_SPEECH_PRESENT": 43
+        },
+        "n": 43,
+        "observed_agreement": 1.0,
+        "reason": "UNDEFINED_ALL_EXPECTED_AGREEMENT",
+        "right_counts": {
+          "MEANINGFUL_SPEECH_PRESENT": 43
+        }
+      },
+      "rows_with_either_ambiguous": 0,
+      "rows_with_either_not_applicable": 0,
+      "rows_with_either_technical_invalid": 0
+    }
+  },
+  "claim_boundary": {
+    "ambiguous_and_technical_invalid_retained": true,
+    "comments_private": true,
+    "complete_census_of_residual_actions": true,
+    "descriptive": true,
+    "post_primary": true,
+    "retuning_allowed": false
+  },
+  "reviewer_descriptives": {
+    "R01": {
+      "actions": 43,
+      "label_counts": {
+        "confidence": {
+          "HIGH": 42,
+          "MEDIUM": 1
+        },
+        "harm_severity": {
+          "MINOR": 1,
+          "NONE": 42
+        },
+        "q1_exact_loop_audio_support": {
+          "NOT_SUPPORTED": 43
+        },
+        "q2_guard_removed_spoken_content": {
+          "NO_SPEECH_REMOVED": 42,
+          "SPEECH_REMOVED": 1
+        },
+        "q3_keep_two_sufficient": {
+          "INSUFFICIENT": 1,
+          "SUFFICIENT": 42
+        },
+        "q4_meaningful_speech_in_window": {
+          "MEANINGFUL_SPEECH_PRESENT": 43
+        }
+      },
+      "meaningful_window_determinate_n": 43,
+      "meaningful_window_fraction_among_determinate": 1.0,
+      "reviewer": "R01",
+      "speech_removal_determinate_n": 43,
+      "speech_removal_fraction_among_determinate": 0.023255813953488372
+    },
+    "R02": {
+      "actions": 43,
+      "label_counts": {
+        "confidence": {
+          "HIGH": 43
+        },
+        "harm_severity": {
+          "NONE": 43
+        },
+        "q1_exact_loop_audio_support": {
+          "NOT_SUPPORTED": 43
+        },
+        "q2_guard_removed_spoken_content": {
+          "NO_SPEECH_REMOVED": 43
+        },
+        "q3_keep_two_sufficient": {
+          "SUFFICIENT": 43
+        },
+        "q4_meaningful_speech_in_window": {
+          "MEANINGFUL_SPEECH_PRESENT": 43
+        }
+      },
+      "meaningful_window_determinate_n": 43,
+      "meaningful_window_fraction_among_determinate": 1.0,
+      "reviewer": "R02",
+      "speech_removal_determinate_n": 43,
+      "speech_removal_fraction_among_determinate": 0.0
+    }
+  },
+  "schema": "postprimary_residual_listening_analysis_v046",
+  "status": "COMPLETE_UNADJUDICATED_TWO_REVIEWER_ANALYSIS",
+  "unique_windows": 41
+}
