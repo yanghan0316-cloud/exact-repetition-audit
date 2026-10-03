@@ -1,0 +1,155 @@
+{
+  "schema": "whisper_ngram_blocking_postprimary_protocol_v1",
+  "protocol_id": "whisper_ngram_blocking_postprimary_v1",
+  "recorded_date_local": "2026-10-02",
+  "timezone": "Asia/Shanghai",
+  "status": "SPECIFIED_BEFORE_NGRAM_DECODING",
+  "source_plan": "TMM_ngram_blocking_plan_v001.pdf (prespecified local study plan; not bundled)",
+  "purpose": "Post-primary four-arm comparison of token n-gram blocking and the existing canonical character guard.",
+  "scope": {
+    "corpus": "aishell5",
+    "analysis_role": "primary",
+    "source_system": "raw_public_sortformer_v2_low_packet_gated",
+    "meeting_manifest": "manifests/streaming_v035_aishell5_eval36_fullmeeting_v1.jsonl",
+    "include_empty_windows": true,
+    "unit_of_analysis": "complete_recording",
+    "replication_extension": false,
+    "n8_sensitivity_extension": false,
+    "extension_decision": "Complete the prespecified minimal Primary/public n=4 comparison in this execution. No reference-based parameter selection."
+  },
+  "expected_records": 1744,
+  "expected_batches": 222,
+  "expected_sessions": 18,
+  "ngram_size": 4,
+  "max_new_tokens": 224,
+  "sampling_seed": 20260725,
+  "arms": {
+    "A": "Reuse original V4 cap224 compression-triggered fallback, n=0, without character guard",
+    "B": "A plus original canonical character guard; validate against V5 texts",
+    "C": "New cap224 greedy and every fallback generation use no_repeat_ngram_size=4",
+    "D": "C plus exactly the same canonical character guard as B"
+  },
+  "model": {
+    "directory": "models/whisper-base",
+    "repository": "openai/whisper-base",
+    "commit": "e37978b90ca9030d5170a5c07aadb050351a65bb",
+    "transformers_version": "4.57.6",
+    "language": "zh",
+    "task": "transcribe",
+    "prompt_token_count": 4,
+    "return_timestamps": false,
+    "independent_window_seconds": 30.0,
+    "condition_on_prev_tokens": false,
+    "force_unique_generate_call": true,
+    "num_beams": 1,
+    "num_return_sequences": 1,
+    "dtype_cuda": "float16"
+  },
+  "batching": {
+    "original_map": "experiments/whisper_control_comparison_postprimary_v4/aishell5/decode_batch_map.jsonl",
+    "max_batch_size": 8,
+    "preserve_original_members_and_positions": true,
+    "global_index": "zero-based order of first occurrence of batch_id in the COMPLETE original V4 map, before subset selection",
+    "fallback_generates_complete_original_batch": true,
+    "adopt_active_members_only": true
+  },
+  "fallback": {
+    "initial_temperature": 0.0,
+    "trigger": "C own greedy text UTF-8 zlib compression ratio > 2.4",
+    "temperatures": [
+      0.2,
+      0.4,
+      0.6,
+      0.8,
+      1.0
+    ],
+    "temperature_index_base": 0,
+    "seed_formula": "20260725 + 0 + 100000 * temperature_index + original_global_batch_index",
+    "compression_ratio_max": 2.4,
+    "average_logprob_min": -1.0,
+    "accept_first_passing_candidate": true,
+    "retain_last_candidate_if_exhausted": true,
+    "average_logprob_definition": "Normalize generated.scores after removing temperature scaling; include first EOS and exclude subsequent padding. For no EOS divide by generated step count + 1. Scores represent the processed, n-gram-constrained distribution.",
+    "sampling_controls": {
+      "top_k": 0,
+      "top_p": 1.0,
+      "typical_p": 1.0,
+      "min_p": null,
+      "epsilon_cutoff": 0.0,
+      "eta_cutoff": 0.0,
+      "repetition_penalty": 1.0,
+      "no_repeat_ngram_size": 4
+    }
+  },
+  "guard": {
+    "implementation": "src/realmeetsep/asr_repetition_guard_v035.py",
+    "max_period_chars": 12,
+    "min_repetitions": 6,
+    "min_span_chars": 24,
+    "keep_repetitions": 2,
+    "preserve_canonical_candidate_priority": true
+  },
+  "scoring": {
+    "references": "experiments/streaming_v035_aishell5_eval36_fullmeeting_v1/meeting_full_references.jsonl",
+    "metric": "micro full-recording cpCER",
+    "normalization": "reuse canonical NFKC, lowercase, alphanumeric normalization",
+    "speaker_assignment": "minimize error separately for each arm and complete recording",
+    "bootstrap_draws": 50000,
+    "bootstrap_seed": 20261002,
+    "bootstrap_unit": "recording, paired; resample numerators and denominators then recompute micro cpCER",
+    "bootstrap_confidence_level": 0.95,
+    "primary_contrasts": [
+      "C-A",
+      "D-C",
+      "C-B"
+    ],
+    "auxiliary_contrasts": [
+      "D-B"
+    ],
+    "report": [
+      "S",
+      "D",
+      "I",
+      "error_rates",
+      "paired_confidence_intervals",
+      "recording_W_T_L",
+      "residual_canonical_trace_events",
+      "affected_windows",
+      "character_counts",
+      "length_ratio_to_A",
+      "empty_windows",
+      "guard_removed_characters",
+      "fallback_trigger_accept_exhaustion_attempts",
+      "token_budget_hits",
+      "runtime"
+    ]
+  },
+  "input_recovery": {
+    "original_audio": "AISHELL-5 original 18 Primary recordings; all 72 far-field paths are present",
+    "activity_source": "reuse original public Sortformer posterior arrays and metadata",
+    "frontend": "reuse original streaming packet fullmeeting export implementation and original configuration",
+    "output_root": "experiments/whisper_ngram_blocking_postprimary_v1/audio_recovery",
+    "acceptance": "18 recordings, 1744 matching stream windows, 222 unchanged original batches; readable mono 16 kHz audio with matching lengths",
+    "per_file_hash_comparison_required": false,
+    "baseline_reuse": "A/B reused as authorized by the source plan when original recordings, activity source, enhancement, windows and decoding settings are retained"
+  },
+  "observed_environment_before_run": {
+    "python": "3.11.15",
+    "torch": "2.11.0+cu128",
+    "cuda_runtime": "12.8",
+    "transformers": "4.57.6",
+    "soundfile": "0.14.0",
+    "numpy": "2.4.4",
+    "gpu": "NVIDIA GeForce RTX 5070 Ti Laptop GPU",
+    "gpu_memory_mib": 12227
+  },
+  "claim_boundary": {
+    "post_primary": true,
+    "reference_previously_open": true,
+    "no_training": true,
+    "no_parameter_search": true,
+    "no_new_semantic_safety_rate_claim": true,
+    "zero_guard_residual_does_not_imply_semantic_preservation": true,
+    "preserve_old_v4_v5_artifacts": true
+  }
+}

@@ -1,7 +1,8 @@
 # 论文复现材料：多说话人转写中的精确重复抑制审计
 
 对应论文 **Auditing Exact-Repetition Containment in Multi-Speaker Transcription**
-的 `tmm_revision_v003` 保存版本。[English README](README.md)
+的原始 `tmm_revision_v003` 保存版本；2026-10-03 新增了对应 `tmm_revision_v013`
+的 token 4-gram 实验。[English README](README.md)
 
 本仓库提供精确重复处理算法、字符与 Whisper token 对照方法、整场会议
 cpCER 评分器、冻结的解码源码、合成测试，以及论文中的数值结果与来源哈希。
@@ -18,6 +19,9 @@ python -m pip install -r requirements.txt
 python -m unittest discover -s tests -v
 python code/verify_public_tables.py
 python code/verify_extended_results.py
+python code/verify_ngram_manifest.py
+python code/verify_ngram_results.py
+python -B -m unittest discover -s code/tests -p test_analyze_ngram_postprimary_v1.py -v
 python code/run_guard.py --text abcdabcdabcdabcdabcdabcd
 ```
 
@@ -32,6 +36,14 @@ bootstrap 对比、616 行解码对照评分、48 个直接基线汇总单元、
 [验证记录](environment/VALIDATION.json)保留了复核依据。
 
 ## 可复现范围
+
+新增 [n-gram 实验](NGRAM_REPRODUCIBILITY.md)覆盖 Primary/public 的 18 段完整录音、
+1,744 个窗口和 222 个原始批次。A/B/C/D 分别为 cap+fallback、再加 guard、
+cap+fallback+4-gram blocking，以及 blocking 后再加 guard；micro cpCER 为
+1.073020 / 1.068336 / 1.110009 / 1.110009。Blocking 相对 A 增加 3.6989 个百分点，
+95% 配对区间为 [0.5292, 7.5640]；字符残余事件从 4 降为 0，D 与 C 文本一致。
+本次未扩展至 Replication 或 n=8，旧听审标签不用于判断 C/D 的语义安全。
+新增验证包括 72 行录音计数、四组配对对比、50,000 次 bootstrap 与 15 项合成测试。
 
 可直接运行文本算法、合成测试、会议评分及公开数值复核。原始音频实验的完整
 重跑仍需自行取得许可语料、公共模型权重、MVDR 输出波形、批次映射和执行记录。

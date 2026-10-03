@@ -1,0 +1,63 @@
+{
+  "source": ".\\experiments\\whisper_ngram_blocking_postprimary_v1\\analysis\\analysis.json",
+  "reference_characters": 49096,
+  "scope": "AISHELL-5 Primary/public full meetings",
+  "bootstrap": {
+    "repetitions": 50000,
+    "seed": 20261002,
+    "unit": "paired full meeting",
+    "estimator": "sum(errors) / sum(reference_characters)",
+    "interval": "percentile 95%"
+  },
+  "error_composition": [
+    {
+      "comparison": "B - A",
+      "substitutions_count_delta": -38,
+      "substitutions_percentage_points": -0.07739938080495357,
+      "deletions_count_delta": 43,
+      "deletions_percentage_points": 0.08758350985823693,
+      "insertions_count_delta": -235,
+      "insertions_percentage_points": -0.47865406550431805,
+      "net_percentage_points": -0.4684699364510214
+    },
+    {
+      "comparison": "C - A",
+      "substitutions_count_delta": -711,
+      "substitutions_percentage_points": -1.4481831513768944,
+      "deletions_count_delta": 10,
+      "deletions_percentage_points": 0.020368258106566728,
+      "insertions_count_delta": 2517,
+      "insertions_percentage_points": 5.126690565422845,
+      "net_percentage_points": 3.698875672152524
+    }
+  ],
+  "paired_effects": [
+    {
+      "comparison": "C-A",
+      "delta_percentage_points": 3.698875672152518,
+      "ci95_lower_percentage_points": 0.529164573775125,
+      "ci95_upper_percentage_points": 7.5640142756952935,
+      "wins": 5,
+      "ties": 0,
+      "losses": 13
+    },
+    {
+      "comparison": "D-C",
+      "delta_percentage_points": 0.0,
+      "ci95_lower_percentage_points": 0.0,
+      "ci95_upper_percentage_points": 0.0,
+      "wins": 0,
+      "ties": 18,
+      "losses": 0
+    },
+    {
+      "comparison": "C-B",
+      "delta_percentage_points": 4.1673456086035525,
+      "ci95_lower_percentage_points": 1.0436310729007403,
+      "ci95_upper_percentage_points": 7.910955304808143,
+      "wins": 5,
+      "ties": 0,
+      "losses": 13
+    }
+  ]
+}

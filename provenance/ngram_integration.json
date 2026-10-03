@@ -1,0 +1,25 @@
+{
+  "schema": "ngram_repository_integration_v1",
+  "integrated_on": "2026-10-03",
+  "repository": "https://github.com/yanghan0316-cloud/exact-repetition-audit",
+  "verified_remote_base_commit": "08258bb3a533cb39ee15c90b832fdfd0ce1b5b43",
+  "manuscript_snapshot": "tmm_revision_v013",
+  "source_package": "output/tmm_revision_v013/reproducibility_addendum",
+  "source_package_manifest_sha256": "662dbb6d57381122edee5b016c7ade8bf4065416a1d2123d3aa6f09ccc4fd361",
+  "integration": [
+    "Merged additive package paths; preserved 10 identical shared source files",
+    "Replaced standalone README.txt with NGRAM_REPRODUCIBILITY.md and root README links",
+    "Retained original license and notices from base release",
+    "Added paper SVG and portable figure generator; original source hashes in environment/NGRAM_CODE_INTEGRATION.json",
+    "Extended CI with numerical checks, eight analysis contracts and seven CPU decoder contracts",
+    "Regenerated dedicated n-gram and full repository SHA-256 manifests"
+  ],
+  "historical_receipt_note": "provenance/base_repository.json and validation/package_validation.json retain pre-publication NOT_PUSHED state from the source package; current availability is represented by the repository revision containing this integration.",
+  "figure": {
+    "source": "output/tmm_revision_v013/source/Figures/ngram_control_tradeoff.svg",
+    "released_path": "figures/ngram_blocking/ngram_control_tradeoff.svg",
+    "source_sha256": "b0e23da885b99d437ab6e62b292320a2b309306a89496b7d2b17cd628dc77e49",
+    "transformation": "byte-identical copy; inspected rendered numeric figure and SVG content"
+  },
+  "public_content_boundary": "Content-free aggregate/recording counts and synthetic fixtures only; no audio, model weights, corpus transcripts, token histories, text-bearing edit traces, input manifests, or reviewer worksheets."
+}

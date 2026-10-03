@@ -1,0 +1,216 @@
+{
+  "schema": "ngram_code_integration_v1",
+  "integration_date": "2026-10-03",
+  "base_commit": "08258bb3a533cb39ee15c90b832fdfd0ce1b5b43",
+  "curated_source": "output/tmm_revision_v013/reproducibility_addendum",
+  "files": [
+    {
+      "path": "code/verify_ngram_manifest.py",
+      "disposition": "added byte-identical file",
+      "source_sha256": "66b79449894d6e9f130487aa40c5c6d3abd7f1a1cbda6009e9c5cdfbb49e8036",
+      "released_sha256": "66b79449894d6e9f130487aa40c5c6d3abd7f1a1cbda6009e9c5cdfbb49e8036"
+    },
+    {
+      "path": "code/verify_ngram_results.py",
+      "disposition": "added byte-identical file",
+      "source_sha256": "6a60f26709ee9e72b6e05e7ed4e24c4bcb7ac18bc44ec78d80c0efa81690c99b",
+      "released_sha256": "6a60f26709ee9e72b6e05e7ed4e24c4bcb7ac18bc44ec78d80c0efa81690c99b"
+    },
+    {
+      "path": "code/configs/whisper_ngram_blocking_postprimary_v1.json",
+      "disposition": "added byte-identical file",
+      "source_sha256": "ed59b2cd65cb11fce8b892a5633e4cb241027559379244d79f55bf0e7533df00",
+      "released_sha256": "ed59b2cd65cb11fce8b892a5633e4cb241027559379244d79f55bf0e7533df00"
+    },
+    {
+      "path": "code/scripts/analyze_ngram_postprimary_v1.py",
+      "disposition": "added byte-identical file",
+      "source_sha256": "08d8086edcaa597d28e1d7488738eb66e1b196eb36a7aafc69082577849381c3",
+      "released_sha256": "08d8086edcaa597d28e1d7488738eb66e1b196eb36a7aafc69082577849381c3"
+    },
+    {
+      "path": "code/scripts/audit_ngram_execution_v1.py",
+      "disposition": "added byte-identical file",
+      "source_sha256": "c129bdc2cda35d4a6d228926f73fa82d62bde3e953c2a247a35b16dd2e27e999",
+      "released_sha256": "c129bdc2cda35d4a6d228926f73fa82d62bde3e953c2a247a35b16dd2e27e999"
+    },
+    {
+      "path": "code/scripts/decode_whisper_cap224_fallback_postprimary_v4.py",
+      "disposition": "preserved existing byte-identical file",
+      "source_sha256": "8f8c59e0222d15db9da037f231bc445fb478f2fa814607e0b6bf890e5f7e89ed",
+      "released_sha256": "8f8c59e0222d15db9da037f231bc445fb478f2fa814607e0b6bf890e5f7e89ed"
+    },
+    {
+      "path": "code/scripts/decode_whisper_meeting.py",
+      "disposition": "preserved existing byte-identical file",
+      "source_sha256": "f555d721bedf705959bb30326211e8a68755a37edc610d3ee0f513f210c3a264",
+      "released_sha256": "f555d721bedf705959bb30326211e8a68755a37edc610d3ee0f513f210c3a264"
+    },
+    {
+      "path": "code/scripts/decode_whisper_ngram_postprimary_v1.py",
+      "disposition": "added byte-identical file",
+      "source_sha256": "93a79357f7770af819e8a392dfbdbde4aaa81dc93ac3454fc5c22aec926261ac",
+      "released_sha256": "93a79357f7770af819e8a392dfbdbde4aaa81dc93ac3454fc5c22aec926261ac"
+    },
+    {
+      "path": "code/scripts/score_meeting_cpcer.py",
+      "disposition": "preserved existing byte-identical file",
+      "source_sha256": "c7d76ded85ef99a6d21cb81bd39d2126c300fa0abac736fa372652c4c5c133f3",
+      "released_sha256": "c7d76ded85ef99a6d21cb81bd39d2126c300fa0abac736fa372652c4c5c133f3"
+    },
+    {
+      "path": "code/tests/test_analyze_ngram_postprimary_v1.py",
+      "disposition": "added byte-identical file",
+      "source_sha256": "0b34c039b2253d61f75619ce567c248e7778580b4d09b24b29fea6b1b6355302",
+      "released_sha256": "0b34c039b2253d61f75619ce567c248e7778580b4d09b24b29fea6b1b6355302"
+    },
+    {
+      "path": "code/tests/test_whisper_ngram_postprimary_v1.py",
+      "disposition": "added byte-identical file",
+      "source_sha256": "9ae13002364e26933c304af2bcab6981793926d3002998fabc43b2ab5741af98",
+      "released_sha256": "9ae13002364e26933c304af2bcab6981793926d3002998fabc43b2ab5741af98"
+    },
+    {
+      "path": "code/src/realmeetsep/asr_repetition_guard_v035.py",
+      "disposition": "preserved existing byte-identical file",
+      "source_sha256": "2b32464dcf2c90c937d453d465da215f0fbf14bd0681785d94e45c015db4509e",
+      "released_sha256": "2b32464dcf2c90c937d453d465da215f0fbf14bd0681785d94e45c015db4509e"
+    },
+    {
+      "path": "code/src/realmeetsep/asr_whisper_confidence_v038.py",
+      "disposition": "preserved existing byte-identical file",
+      "source_sha256": "a2cedd3b11621ac1cb5094235af3dabdc7b6d3ad96b9d7fcbc749f298e8ef6d5",
+      "released_sha256": "a2cedd3b11621ac1cb5094235af3dabdc7b6d3ad96b9d7fcbc749f298e8ef6d5"
+    },
+    {
+      "path": "code/src/realmeetsep/asr_whisper_fallback_v039.py",
+      "disposition": "preserved existing byte-identical file",
+      "source_sha256": "fb117cff27a5d2df5e1f63dc678c29f3c67b74523dc449920edcd09d5ed38dab",
+      "released_sha256": "fb117cff27a5d2df5e1f63dc678c29f3c67b74523dc449920edcd09d5ed38dab"
+    },
+    {
+      "path": "code/src/realmeetsep/asr_whisper_ngram_postprimary_v1.py",
+      "disposition": "added byte-identical file",
+      "source_sha256": "6ffdc023743f89eea27c36250fff897571176652ddde890b2d6afa2700f0b50f",
+      "released_sha256": "6ffdc023743f89eea27c36250fff897571176652ddde890b2d6afa2700f0b50f"
+    },
+    {
+      "path": "code/src/realmeetsep/cpcer.py",
+      "disposition": "preserved existing byte-identical file",
+      "source_sha256": "9cba97bf328e2d596cd63e86eb82a87f953dfa4648a5049201308503b933073c",
+      "released_sha256": "9cba97bf328e2d596cd63e86eb82a87f953dfa4648a5049201308503b933073c"
+    },
+    {
+      "path": "code/src/realmeetsep/meeting_asr.py",
+      "disposition": "preserved existing byte-identical file",
+      "source_sha256": "1d14c19428f6ddb59767e0c5312509dc901c2179538fcb0f2738e0a34793b826",
+      "released_sha256": "1d14c19428f6ddb59767e0c5312509dc901c2179538fcb0f2738e0a34793b826"
+    },
+    {
+      "path": "code/src/realmeetsep/textgrid.py",
+      "disposition": "preserved existing byte-identical file",
+      "source_sha256": "97cfdf7492f5c09a109ae8189d643db8bba28d855af18489a6623c611957916d",
+      "released_sha256": "97cfdf7492f5c09a109ae8189d643db8bba28d855af18489a6623c611957916d"
+    },
+    {
+      "path": "code/src/realmeetsep/__init__.py",
+      "disposition": "preserved existing byte-identical file",
+      "source_sha256": "01ba4719c80b6fe911b091a7c05124b64eeece964e09c058ef8f9805daca546b",
+      "released_sha256": "01ba4719c80b6fe911b091a7c05124b64eeece964e09c058ef8f9805daca546b"
+    },
+    {
+      "path": "requirements-ngram-decoder.txt",
+      "disposition": "added byte-identical file",
+      "source_sha256": "4d311691252a71aa3e519a83266df67eb04581c5612156caede16217ca56ecc6",
+      "released_sha256": "4d311691252a71aa3e519a83266df67eb04581c5612156caede16217ca56ecc6"
+    },
+    {
+      "path": "requirements-ngram-numeric.txt",
+      "disposition": "added byte-identical file",
+      "source_sha256": "5584cd444187df7bb06ad2d18ad6d51a262243d07a6f23cabc9814fb84b690ec",
+      "released_sha256": "5584cd444187df7bb06ad2d18ad6d51a262243d07a6f23cabc9814fb84b690ec"
+    }
+  ],
+  "figure_script": {
+    "original_path": "scripts/build_tmm_ngram_figure_v011.py",
+    "released_path": "code/scripts/build_tmm_ngram_figure_v011.py",
+    "original_sha256": "51c94c1ae9ac72a3d9c96ed3f428233f8ef419c334fba780bd042bcfeccc4440",
+    "released_sha256": "21b59d53ee73fb313e7d450a50a1d4e61de416f4178ef9a0f1bbe0fb1101e824",
+    "changes": [
+      {
+        "before": "ROOT = Path(__file__).resolve().parents[1]",
+        "after": "ROOT = Path(__file__).resolve().parents[2]"
+      },
+      {
+        "before": "DATA = ROOT / 'code/ali_overlap_sep/experiments/whisper_ngram_blocking_postprimary_v1/analysis/analysis.json'",
+        "after": "DATA = ROOT / 'results/ngram_blocking/analysis.json'"
+      },
+      {
+        "before": "OUT = ROOT / 'output/tmm_revision_v011/source/Figures'",
+        "after": "OUT = ROOT / 'local/ngram_figures'"
+      },
+      {
+        "before": "FIG_DATA = ROOT / 'output/tmm_revision_v011/figure_data'",
+        "after": "FIG_DATA = ROOT / 'local/ngram_figures/data'"
+      }
+    ],
+    "scope": "Only repository root and default input/output paths changed. Plot data, geometry, styles, computations and filenames unchanged."
+  },
+  "new_optional_requirements": {
+    "requirements-ngram-figure.txt": [
+      "-r requirements-ngram-numeric.txt",
+      "matplotlib==3.11.0"
+    ]
+  },
+  "validation_status": "PASS",
+  "validation": {
+    "analysis_tests": 8,
+    "decoder_tensor_tests": 7,
+    "tests_failed": 0,
+    "numeric_results": {
+      "status": "PASS",
+      "recording_arm_rows": 72,
+      "arms": 4,
+      "paired_contrasts": 4,
+      "bootstrap_draws": 50000,
+      "bootstrap_seed": 20261002,
+      "checks": [
+        "recording counts and cpCER",
+        "arm totals and macro/micro cpCER",
+        "recording-paired intervals and W/T/L",
+        "arm and comparison CSVs",
+        "figure CSV values"
+      ],
+      "scope": "Aggregate numerical verification only. No acoustic rerun or listening revalidation. Text identity and residual event claims are supported by the recorded execution/analysis receipts, not inferred independently from count equality."
+    },
+    "figure_smoke": {
+      "command": "python -B code/scripts/build_tmm_ngram_figure_v011.py --analysis results/ngram_blocking/analysis.json --output-dir local/ngram_figures --data-dir local/ngram_figures/data",
+      "matplotlib": "3.11.0",
+      "reference_characters": 49096,
+      "csv_comparison": {
+        "error_composition.csv": {
+          "rows": 2,
+          "numeric_cells": 14,
+          "byte_identical": true,
+          "released_sha256": "3b0a002bba6e46897485115b87d6da4f40d723a94d4a11d8a012ce9707eff342",
+          "regenerated_sha256": "3b0a002bba6e46897485115b87d6da4f40d723a94d4a11d8a012ce9707eff342"
+        },
+        "paired_effects.csv": {
+          "rows": 3,
+          "numeric_cells": 18,
+          "byte_identical": true,
+          "released_sha256": "38d4074acef17339da0dd4cedd9823cf82742d0b8063547e9b13762f19ac35f8",
+          "regenerated_sha256": "38d4074acef17339da0dd4cedd9823cf82742d0b8063547e9b13762f19ac35f8"
+        }
+      }
+    },
+    "scope": "CPU synthetic tests, content-free numeric verification and figure regeneration. No acoustic decode or model download.",
+    "cli_help_imports": [
+      "decode_whisper_ngram_postprimary_v1.py",
+      "analyze_ngram_postprimary_v1.py",
+      "audit_ngram_execution_v1.py"
+    ],
+    "figure_visual_check": "Generated PNG inspected: panels, labels, error bars, W/T/L and legend readable with no clipping.",
+    "figure_font_note": "The original script requests Times New Roman; font availability may change appearance on another platform. No fonts are redistributed. Numeric CSV regeneration is the reproducibility check."
+  }
+}

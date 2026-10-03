@@ -1,0 +1,13 @@
+{
+  "python": "3.11.15",
+  "platform": "Windows-10-10.0.26100-SP0",
+  "torch": "2.11.0+cu128",
+  "cuda": "12.8",
+  "transformers": "4.57.6",
+  "numpy": "2.4.4",
+  "soundfile": "0.14.0",
+  "gpu": "NVIDIA GeForce RTX 5070 Ti Laptop GPU",
+  "gpu_total_bytes": 12792037376,
+  "inference_dtype": "float16",
+  "local_model_only": true
+}

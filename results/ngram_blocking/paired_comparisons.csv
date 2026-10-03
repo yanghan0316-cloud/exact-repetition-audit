@@ -1,0 +1,5 @@
+﻿comparison,status,delta_micro_cpcer,delta_percentage_points,ci95_lower,ci95_upper,ci95_lower_percentage_points,ci95_upper_percentage_points,wins,ties,losses,meetings,bootstrap_repetitions,bootstrap_seed,unit,method
+C-A,available,0.03698875672152518,3.698875672152518,0.005291645737751251,0.07564014275695294,0.529164573775125,7.5640142756952935,5,0,13,18,50000,20261002,meeting,paired percentile; resampled sum(errors)/sum(ref)
+D-C,available,0.0,0.0,0.0,0.0,0.0,0.0,0,18,0,18,50000,20261002,meeting,paired percentile; resampled sum(errors)/sum(ref)
+C-B,available,0.041673456086035524,4.1673456086035525,0.010436310729007404,0.07910955304808143,1.0436310729007403,7.910955304808143,5,0,13,18,50000,20261002,meeting,paired percentile; resampled sum(errors)/sum(ref)
+D-B,available,0.041673456086035524,4.1673456086035525,0.010436310729007404,0.07910955304808143,1.0436310729007403,7.910955304808143,5,0,13,18,50000,20261002,meeting,paired percentile; resampled sum(errors)/sum(ref)

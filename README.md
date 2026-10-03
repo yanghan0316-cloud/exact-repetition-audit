@@ -3,8 +3,9 @@
 [中文说明](README.zh-CN.md)
 
 Companion code and numeric artifacts for the manuscript **Auditing Exact-Repetition
-Containment in Multi-Speaker Transcription**, corresponding to the saved
-`tmm_revision_v003` manuscript snapshot. This release supports computational
+Containment in Multi-Speaker Transcription**. The original release corresponds
+to `tmm_revision_v003`; the token 4-gram experiment added on 2026-10-03 corresponds
+to `tmm_revision_v013`. This release supports computational
 checks of the reported results and reuse of the exact-repetition operator on
 locally held transcripts.
 
@@ -26,6 +27,9 @@ python -m pip install -r requirements.txt
 python -m unittest discover -s tests -v
 python code/verify_public_tables.py
 python code/verify_extended_results.py
+python code/verify_ngram_manifest.py
+python code/verify_ngram_results.py
+python -B -m unittest discover -s code/tests -p test_analyze_ngram_postprimary_v1.py -v
 python code/run_guard.py --text abcdabcdabcdabcdabcdabcd
 ```
 
@@ -36,8 +40,8 @@ meeting rows, 48 direct-baseline aggregate cells, 864 matched-deletion rows,
 and 80,256 method traces. The standard-library test runner exercises the frozen
 guard, direct baselines, normalization, speaker assignment, and reconstruction.
 Three optional tensor tests are skipped when PyTorch is absent. GitHub Actions
-runs the core tests and both numeric checks without downloading a corpus or
-model.
+runs the core tests and all numeric checks without downloading a corpus or
+model. A separate CPU job exercises all seven new n-gram decoder contracts.
 
 For the optional decoder/tokenizer dependencies:
 
@@ -70,6 +74,7 @@ scoring schema, trace reconstruction, and decoder prerequisites.
 | --- | --- |
 | Original AISHELL-5 Primary / Replication contrasts | [Summary](results/eval36_summary.json), [meeting scores](results/eval36_recording_system_cpcer.csv), [paired contrasts](results/eval36_paired_contrasts.csv), [empty anchor](results/empty_output_baseline.csv) |
 | Token cap and compression-triggered fallback | [Decoder controls](results/decoder_controls/) |
+| Decode-time token 4-gram blocking | [N-gram results](results/ngram_blocking/), [reproduction guide](NGRAM_REPRODUCIBILITY.md) |
 | Direct character and Whisper-token baselines | [Direct baselines and compressed method traces](results/direct_baselines/) |
 | Equal-length deletion and retention diagnostics | [Matched deletion](results/matched_deletion/), [alignment retention](results/alignment_retention/) |
 | Listening audits | [Aggregate judgments](results/listening/) |
@@ -86,6 +91,28 @@ relative paths, transformations, and SHA-256 bindings. The
 preserve thresholds, seeds, grouping rules, and interpretation boundaries.
 Historical version identifiers in filenames identify frozen research artifacts;
 they are not separate software release versions.
+
+## Token 4-gram comparison
+
+The post-primary experiment covers all 18 AISHELL-5 Primary/public recordings,
+1,744 stream windows and 222 original batches. All arms retain the 224-token
+cap and compression-triggered temperature fallback. Blocking uses
+`no_repeat_ngram_size=4` in the initial decode and every fallback attempt.
+
+| Arm | Intervention | Micro cpCER | Residual canonical events |
+| --- | --- | --- | --- |
+| A | Cap plus fallback | 1.073020 | 4 |
+| B | A plus character guard | 1.068336 | 0 |
+| C | A plus token 4-gram blocking | 1.110009 | 0 |
+| D | C plus character guard | 1.110009 | 0 |
+
+Blocking increases cpCER by 3.6989 percentage points versus A (95% paired
+bootstrap interval [0.5292, 7.5640]; 5/0/13 recording wins/ties/losses).
+D changes no text relative to C. This fixed-n comparison does not evaluate
+Replication, other sources or n=8. The earlier listening labels do not assess
+C/D. The [n-gram guide](NGRAM_REPRODUCIBILITY.md) includes the frozen protocol,
+15 synthetic tests, count-based reproduction, figure generation and acoustic
+rerun prerequisites.
 
 ## Reproducibility scope
 

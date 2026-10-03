@@ -1,0 +1,16 @@
+{
+  "status": "PASS",
+  "recording_arm_rows": 72,
+  "arms": 4,
+  "paired_contrasts": 4,
+  "bootstrap_draws": 50000,
+  "bootstrap_seed": 20261002,
+  "checks": [
+    "recording counts and cpCER",
+    "arm totals and macro/micro cpCER",
+    "recording-paired intervals and W/T/L",
+    "arm and comparison CSVs",
+    "figure CSV values"
+  ],
+  "scope": "Aggregate numerical verification only. No acoustic rerun or listening revalidation. Text identity and residual event claims are supported by the recorded execution/analysis receipts, not inferred independently from count equality."
+}

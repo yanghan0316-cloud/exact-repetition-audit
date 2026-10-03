@@ -1,0 +1,48 @@
+{
+  "schema": "independent_ngram_execution_audit_v1",
+  "pass": true,
+  "run_dir": ".\\experiments\\whisper_ngram_blocking_postprimary_v1\\decode",
+  "formal_complete_coverage_required": true,
+  "counts": {
+    "decoded_records": 1744,
+    "decoded_batches": 222,
+    "trigger_records": 7,
+    "accepted_records": 1,
+    "exhausted_records": 6,
+    "attempt_records": 31,
+    "t0_cap_hit_records": 6,
+    "final_cap_hit_records": 5
+  },
+  "generation_calls": 253,
+  "member_counts": {
+    "rows": 1992,
+    "cap_hit": 9,
+    "padding_rows": 1720,
+    "timestamp_rows": 5
+  },
+  "checks": [
+    "model_generation_config_only_n4_changed",
+    "full_original_map_global_indices",
+    "full_original_batch_members_and_positions",
+    "seed_formula_every_sampled_call",
+    "n4_every_generation",
+    "prompt_inclusive_nonrepeating_token_4grams",
+    "first_eos_and_padding",
+    "224_new_token_budget",
+    "token_text_roundtrip",
+    "compression_ratios",
+    "own_t0_trigger",
+    "active_trajectory_and_first_acceptance",
+    "last_attempt_adoption_on_exhaustion",
+    "final_text_and_diagnostic_sidecars",
+    "summary_counts"
+  ],
+  "score_boundary_probe": {
+    "early_eos_padding_negative_infinity_ignored": true,
+    "first_eos_included": true,
+    "no_eos_224_steps_denominator_225": true,
+    "eos_on_224th_step_denominator_224": true,
+    "nonfinite_valid_position_rejected": true
+  },
+  "score_log_scope": "Saved finite sum/denominator/average values are independently checked; raw per-step logits are not retained. Independent synthetic probes verify scorer temperature normalization and EOS handling."
+}

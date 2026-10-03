@@ -1,0 +1,68 @@
+{
+  "status": "PASS",
+  "date": "2026-10-02",
+  "remote_status": "NOT_PUSHED",
+  "source_copies_byte_identical": 23,
+  "shared_base_code_files": [
+    {
+      "path": "code/scripts/decode_whisper_cap224_fallback_postprimary_v4.py",
+      "identical_to_recorded_base": true
+    },
+    {
+      "path": "code/scripts/decode_whisper_meeting.py",
+      "identical_to_recorded_base": true
+    },
+    {
+      "path": "code/scripts/score_meeting_cpcer.py",
+      "identical_to_recorded_base": true
+    },
+    {
+      "path": "code/src/realmeetsep/asr_repetition_guard_v035.py",
+      "identical_to_recorded_base": true
+    },
+    {
+      "path": "code/src/realmeetsep/asr_whisper_confidence_v038.py",
+      "identical_to_recorded_base": true
+    },
+    {
+      "path": "code/src/realmeetsep/asr_whisper_fallback_v039.py",
+      "identical_to_recorded_base": true
+    },
+    {
+      "path": "code/src/realmeetsep/cpcer.py",
+      "identical_to_recorded_base": true
+    },
+    {
+      "path": "code/src/realmeetsep/meeting_asr.py",
+      "identical_to_recorded_base": true
+    },
+    {
+      "path": "code/src/realmeetsep/textgrid.py",
+      "identical_to_recorded_base": true
+    },
+    {
+      "path": "code/src/realmeetsep/__init__.py",
+      "identical_to_recorded_base": true
+    }
+  ],
+  "python_source_files_parse": 18,
+  "analysis_tests_passed": 8,
+  "decoder_tests_passed": 7,
+  "cli_help_entry_points_passed": [
+    "decode_whisper_ngram_postprimary_v1.py",
+    "analyze_ngram_postprimary_v1.py",
+    "audit_ngram_execution_v1.py",
+    "score_meeting_cpcer.py"
+  ],
+  "numeric_verification": "validation/numeric_verification.json",
+  "numerical_verification_status": "PASS",
+  "content_review": {
+    "explicit_source_allowlist": true,
+    "no_audio_weights_transcript_jsonl_or_worksheets": true,
+    "recording_csv_columns_are_count_only": true,
+    "no_machine_local_absolute_paths": true,
+    "source_code_uses_synthetic_test_fixtures": true,
+    "no_remote_commands_executed": true
+  },
+  "scope": "Package validation, synthetic tests and count-based verification; no new acoustic experiment."
+}

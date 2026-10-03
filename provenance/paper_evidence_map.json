@@ -2,7 +2,7 @@
   "schema": "paper_evidence_map_v1",
   "paper_title": "Auditing Exact-Repetition Containment in Multi-Speaker Transcription",
   "manuscript_snapshot": "tmm_revision_v003",
-  "version_note": "The v003 main and supplement are the latest complete saved manuscript snapshot at release preparation. The v004 folder held only a format-verification record. The root VoiceKing README and paper_fulltac.docx describe an earlier, different paper and are not release sources.",
+  "version_note": "Base evidence mappings below refer to the original tmm_revision_v003 snapshot. The additive token 4-gram experiment from tmm_revision_v013 is mapped in addenda; baseline artifacts retain their historical identities.",
   "metric": "cpCER is a fraction, lower is better; an empty hypothesis has cpCER 1.0.",
   "split_mapping": {
     "AISHELL-5 Primary": "Eval1 / A5E1 (18 recordings, study-specific split)",
@@ -62,6 +62,30 @@
       "boundary": "Train12 overlaps upstream training; Screen12 is an opened, non-primary negative selector ablation."
     }
   ],
-  "historical_figures": "figures/historical_v043 contains the earlier content-free method and result SVGs for provenance; the two top-level PDFs are the figures used by the current manuscript.",
-  "reproducibility_boundary": "The released numeric tables support independent aggregation and consistency checks, and the method code supports reproduction on locally authorized inputs. End-to-end rerunning of the private S-FULLTAC arm remains unavailable; public Sortformer and Whisper weights must be obtained separately. This release does not independently validate the original audio or listening judgments."
+  "historical_figures": "figures/historical_v043 contains earlier content-free SVGs; the two top-level PDFs belong to the base v003 manuscript. The added n-gram figure is mapped in addenda.",
+  "reproducibility_boundary": "The released numeric tables support independent aggregation and consistency checks, and the method code supports reproduction on locally authorized inputs. End-to-end rerunning of the private S-FULLTAC arm remains unavailable; public Sortformer and Whisper weights must be obtained separately. This release does not independently validate the original audio or listening judgments.",
+  "addenda": [
+    {
+      "name": "Token 4-gram blocking",
+      "manuscript_snapshot": "tmm_revision_v013",
+      "paper_labels": [
+        "tab:ngram-main",
+        "fig:ngram-tradeoff",
+        "tab:ngram-detail"
+      ],
+      "scope": "Post-primary Primary/public only: 18 recordings, 1744 windows, 222 original batches, n=4",
+      "release_files": [
+        "results/ngram_blocking/analysis.json",
+        "results/ngram_blocking/arm_summary.csv",
+        "results/ngram_blocking/paired_comparisons.csv",
+        "results/ngram_blocking/per_meeting_counts.csv",
+        "figures/ngram_blocking/ngram_control_tradeoff.svg",
+        "figures/ngram_blocking/error_composition.csv",
+        "figures/ngram_blocking/paired_effects.csv"
+      ],
+      "reproduction": "python code/verify_ngram_results.py",
+      "guide": "NGRAM_REPRODUCIBILITY.md",
+      "boundary": "No Replication or n=8 experiment; earlier listening evidence does not evaluate C/D. Numerical checks operate on counts, not withheld transcripts."
+    }
+  ]
 }

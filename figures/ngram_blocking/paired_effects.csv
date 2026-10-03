@@ -1,0 +1,4 @@
+comparison,delta_percentage_points,ci95_lower_percentage_points,ci95_upper_percentage_points,wins,ties,losses
+C-A,3.698875672152518,0.529164573775125,7.5640142756952935,5,0,13
+D-C,0.0,0.0,0.0,0,18,0
+C-B,4.1673456086035525,1.0436310729007403,7.910955304808143,5,0,13

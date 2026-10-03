@@ -1,0 +1,10 @@
+{
+  "repository": "https://github.com/yanghan0316-cloud/exact-repetition-audit",
+  "recorded_base_commit": "08258bb3a533cb39ee15c90b832fdfd0ce1b5b43",
+  "recorded_publication_date": "2026-10-01",
+  "evidence": "Existing local publication_receipt.json; remote HEAD was not queried by this packaging task.",
+  "addendum_remote_status": "NOT_PUSHED",
+  "original_research_project_relative_path": "code/ali_overlap_sep",
+  "original_experiment_relative_path": "experiments/whisper_ngram_blocking_postprimary_v1",
+  "target_layout": "Merge this additive package at the base repository root; do not replace the base README or existing release manifest."
+}

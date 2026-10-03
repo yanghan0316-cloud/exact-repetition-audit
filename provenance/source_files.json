@@ -1,0 +1,192 @@
+{
+  "scope": "Author-created software, configuration, numeric aggregates and existing public license/notices only.",
+  "sources": [
+    {
+      "source": "code/ali_overlap_sep/configs/whisper_ngram_blocking_postprimary_v1.json",
+      "destination": "code/configs/whisper_ngram_blocking_postprimary_v1.json",
+      "source_sha256": "ac382d76f2050b107495c3017cacf0c0141ee0c0809cb95fb7f80e79804d7e67",
+      "transformation": "Replace source_plan local absolute path with document title; execution parameters unchanged"
+    },
+    {
+      "source": "code/ali_overlap_sep/scripts/analyze_ngram_postprimary_v1.py",
+      "destination": "code/scripts/analyze_ngram_postprimary_v1.py",
+      "source_sha256": "08d8086edcaa597d28e1d7488738eb66e1b196eb36a7aafc69082577849381c3",
+      "transformation": "byte-identical copy"
+    },
+    {
+      "source": "code/ali_overlap_sep/scripts/audit_ngram_execution_v1.py",
+      "destination": "code/scripts/audit_ngram_execution_v1.py",
+      "source_sha256": "c129bdc2cda35d4a6d228926f73fa82d62bde3e953c2a247a35b16dd2e27e999",
+      "transformation": "byte-identical copy"
+    },
+    {
+      "source": "code/ali_overlap_sep/scripts/decode_whisper_cap224_fallback_postprimary_v4.py",
+      "destination": "code/scripts/decode_whisper_cap224_fallback_postprimary_v4.py",
+      "source_sha256": "8f8c59e0222d15db9da037f231bc445fb478f2fa814607e0b6bf890e5f7e89ed",
+      "transformation": "byte-identical copy"
+    },
+    {
+      "source": "code/ali_overlap_sep/scripts/decode_whisper_meeting.py",
+      "destination": "code/scripts/decode_whisper_meeting.py",
+      "source_sha256": "f555d721bedf705959bb30326211e8a68755a37edc610d3ee0f513f210c3a264",
+      "transformation": "byte-identical copy"
+    },
+    {
+      "source": "code/ali_overlap_sep/scripts/decode_whisper_ngram_postprimary_v1.py",
+      "destination": "code/scripts/decode_whisper_ngram_postprimary_v1.py",
+      "source_sha256": "93a79357f7770af819e8a392dfbdbde4aaa81dc93ac3454fc5c22aec926261ac",
+      "transformation": "byte-identical copy"
+    },
+    {
+      "source": "output/github_release/exact-repetition-audit/code/scripts/score_meeting_cpcer.py",
+      "destination": "code/scripts/score_meeting_cpcer.py",
+      "source_sha256": "c7d76ded85ef99a6d21cb81bd39d2126c300fa0abac736fa372652c4c5c133f3",
+      "transformation": "byte-identical copy"
+    },
+    {
+      "source": "output/github_release/exact-repetition-audit/code/src/realmeetsep/__init__.py",
+      "destination": "code/src/realmeetsep/__init__.py",
+      "source_sha256": "01ba4719c80b6fe911b091a7c05124b64eeece964e09c058ef8f9805daca546b",
+      "transformation": "byte-identical copy"
+    },
+    {
+      "source": "code/ali_overlap_sep/src/realmeetsep/asr_repetition_guard_v035.py",
+      "destination": "code/src/realmeetsep/asr_repetition_guard_v035.py",
+      "source_sha256": "2b32464dcf2c90c937d453d465da215f0fbf14bd0681785d94e45c015db4509e",
+      "transformation": "byte-identical copy"
+    },
+    {
+      "source": "code/ali_overlap_sep/src/realmeetsep/asr_whisper_confidence_v038.py",
+      "destination": "code/src/realmeetsep/asr_whisper_confidence_v038.py",
+      "source_sha256": "a2cedd3b11621ac1cb5094235af3dabdc7b6d3ad96b9d7fcbc749f298e8ef6d5",
+      "transformation": "byte-identical copy"
+    },
+    {
+      "source": "code/ali_overlap_sep/src/realmeetsep/asr_whisper_fallback_v039.py",
+      "destination": "code/src/realmeetsep/asr_whisper_fallback_v039.py",
+      "source_sha256": "fb117cff27a5d2df5e1f63dc678c29f3c67b74523dc449920edcd09d5ed38dab",
+      "transformation": "byte-identical copy"
+    },
+    {
+      "source": "code/ali_overlap_sep/src/realmeetsep/asr_whisper_ngram_postprimary_v1.py",
+      "destination": "code/src/realmeetsep/asr_whisper_ngram_postprimary_v1.py",
+      "source_sha256": "6ffdc023743f89eea27c36250fff897571176652ddde890b2d6afa2700f0b50f",
+      "transformation": "byte-identical copy"
+    },
+    {
+      "source": "code/ali_overlap_sep/src/realmeetsep/cpcer.py",
+      "destination": "code/src/realmeetsep/cpcer.py",
+      "source_sha256": "9cba97bf328e2d596cd63e86eb82a87f953dfa4648a5049201308503b933073c",
+      "transformation": "byte-identical copy"
+    },
+    {
+      "source": "code/ali_overlap_sep/src/realmeetsep/meeting_asr.py",
+      "destination": "code/src/realmeetsep/meeting_asr.py",
+      "source_sha256": "1d14c19428f6ddb59767e0c5312509dc901c2179538fcb0f2738e0a34793b826",
+      "transformation": "byte-identical copy"
+    },
+    {
+      "source": "code/ali_overlap_sep/src/realmeetsep/textgrid.py",
+      "destination": "code/src/realmeetsep/textgrid.py",
+      "source_sha256": "97cfdf7492f5c09a109ae8189d643db8bba28d855af18489a6623c611957916d",
+      "transformation": "byte-identical copy"
+    },
+    {
+      "source": "code/ali_overlap_sep/tests/test_analyze_ngram_postprimary_v1.py",
+      "destination": "code/tests/test_analyze_ngram_postprimary_v1.py",
+      "source_sha256": "0b34c039b2253d61f75619ce567c248e7778580b4d09b24b29fea6b1b6355302",
+      "transformation": "byte-identical copy"
+    },
+    {
+      "source": "code/ali_overlap_sep/tests/test_whisper_ngram_postprimary_v1.py",
+      "destination": "code/tests/test_whisper_ngram_postprimary_v1.py",
+      "source_sha256": "9ae13002364e26933c304af2bcab6981793926d3002998fabc43b2ab5741af98",
+      "transformation": "byte-identical copy"
+    },
+    {
+      "source": "code/ali_overlap_sep/experiments/whisper_ngram_blocking_postprimary_v1/environment.json",
+      "destination": "environment/recorded_environment.json",
+      "source_sha256": "d9ee0cb4b35c55216dfff8998b85c4ed1e7ba9764b91828b2f5fc5d50a5dcb5b",
+      "transformation": "byte-identical copy"
+    },
+    {
+      "source": "output/tmm_revision_v013/figure_data/error_composition.csv",
+      "destination": "figures/ngram_blocking/error_composition.csv",
+      "source_sha256": "3b0a002bba6e46897485115b87d6da4f40d723a94d4a11d8a012ce9707eff342",
+      "transformation": "byte-identical copy"
+    },
+    {
+      "source": "output/tmm_revision_v013/figure_data/paired_effects.csv",
+      "destination": "figures/ngram_blocking/paired_effects.csv",
+      "source_sha256": "38d4074acef17339da0dd4cedd9823cf82742d0b8063547e9b13762f19ac35f8",
+      "transformation": "byte-identical copy"
+    },
+    {
+      "source": "output/tmm_revision_v013/figure_data/source.json",
+      "destination": "figures/ngram_blocking/source.json",
+      "source_sha256": "dce351b03a5b5c1b6b4becde3a827ab720f66e6267482294473cabdfff38a736",
+      "transformation": "JSON serialization; replace local project absolute path prefix with dot; numeric values unchanged"
+    },
+    {
+      "source": "output/github_release/exact-repetition-audit/LICENSE",
+      "destination": "LICENSE",
+      "source_sha256": "1c1d1953d899096468a02d817f21f7cf72874c1be34641dedc81aad832704669",
+      "transformation": "byte-identical copy"
+    },
+    {
+      "source": "code/ali_overlap_sep/experiments/whisper_ngram_blocking_postprimary_v1/analysis/analysis.json",
+      "destination": "results/ngram_blocking/analysis.json",
+      "source_sha256": "109e083fecc306c34b046f0b42714c48c390654c59147a5bb300379079bb0539",
+      "transformation": "JSON serialization; replace local project absolute path prefix with dot; numeric values unchanged"
+    },
+    {
+      "source": "code/ali_overlap_sep/experiments/whisper_ngram_blocking_postprimary_v1/analysis/arm_summary.csv",
+      "destination": "results/ngram_blocking/arm_summary.csv",
+      "source_sha256": "44bba8cc386ebd109f9e29d136ad9baef3ba2cd7645a36132279d77eede34065",
+      "transformation": "byte-identical copy"
+    },
+    {
+      "source": "code/ali_overlap_sep/experiments/whisper_ngram_blocking_postprimary_v1/analysis/paired_comparisons.csv",
+      "destination": "results/ngram_blocking/paired_comparisons.csv",
+      "source_sha256": "8ef909466738aa620daa2697fff7101bf4266e61aac09c6ab9a79c881512ae12",
+      "transformation": "byte-identical copy"
+    },
+    {
+      "source": "code/ali_overlap_sep/experiments/whisper_ngram_blocking_postprimary_v1/analysis/per_meeting.csv",
+      "destination": "results/ngram_blocking/per_meeting_counts.csv",
+      "source_sha256": "0c06536ed05874ade6e70f8b514c61a4eabce1415dc86975b72b86752b5fcce3",
+      "transformation": "Whitelist eight content-free recording-level columns; omit cp_assignment speaker IDs and model field"
+    },
+    {
+      "source": "output/github_release/exact-repetition-audit/THIRD_PARTY_NOTICES.md",
+      "destination": "THIRD_PARTY_NOTICES.md",
+      "source_sha256": "8761f27cacde58c602db4096342a34a40f0312564c867d90fca4ad14ea9ab594",
+      "transformation": "byte-identical copy"
+    },
+    {
+      "source": "code/ali_overlap_sep/experiments/whisper_ngram_blocking_postprimary_v1/validation/full_execution_audit.json",
+      "destination": "validation/recorded_full_execution_audit.json",
+      "source_sha256": "a53d7dab0ed571e2fe08c1905d7b148190fb3b3f013f4402261391367ada0a39",
+      "transformation": "JSON serialization; replace local project absolute path prefix with dot; check results unchanged"
+    },
+    {
+      "source": "code/ali_overlap_sep/experiments/whisper_ngram_blocking_postprimary_v1/validation/smoke_validation.json",
+      "destination": "validation/recorded_smoke_validation.json",
+      "source_sha256": "bce5a0c2b0b105234bd4bdc81beffac3c3d5a31d7b5ad5a6e28b6ca92f871cff",
+      "transformation": "JSON serialization; replace local project absolute path prefix with dot; check results unchanged"
+    }
+  ],
+  "excluded": [
+    "audio and enhanced waveforms",
+    "model/tokenizer weight assets",
+    "recognized or reference transcripts",
+    "raw generated token sequences and per-call logs/checkpoints",
+    "guard edit traces containing repeated text",
+    "per-window manifests and private execution receipts",
+    "listening worksheets and individual reviewer data",
+    "per-recording speaker assignment IDs",
+    "unreviewed third-party assets"
+  ],
+  "source_code_mutations": false,
+  "reuse_note": "Reused the published scorer whose docstring uses an opaque speaker placeholder, and the published package initializer. All executable scoring statements match the research implementation; all shared base-repository Python files are unchanged."
+}

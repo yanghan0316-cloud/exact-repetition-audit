@@ -1,0 +1,2 @@
+-r requirements-ngram-numeric.txt
+matplotlib==3.11.0
